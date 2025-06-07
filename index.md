@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Red Teaming
-subtitle: Removing assumptions
+title: Welcome
+subtitle: Welcome to Ty Anderson's professional website!
 ---
 
-# Why Red Team?
+# Welcome
 
-This is why...
+This is why I have a website...
