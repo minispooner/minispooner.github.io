@@ -1,8 +1,9 @@
 ---
 layout: home
 title: Red Teaming
-subtitle: Welcome to all things red teaming.
+subtitle: Removing assumptions
 ---
 
 # Why Red Team?
+
 This is why...
