@@ -8,8 +8,8 @@ I grew up loving to tinker with technology and computers. When I was eighteen, I
 
 Red Teaming involves simulating real-world attacks against organizations to help them measure and improve their defensive capabilities. You can learn more about Red Teaming [here](../redteaming/). Attempting to break into computer networks and steal things requires a unique mindset. I grew up playing sports and developed a very competitive spirit. I love to win. I also enjoy breaking things and taking them apart to understand how they work. While this can be educational, I've also learned through experience that it can be very fun to find and exploit loopholes discovered during this process.
 
-While competitiveness and curiosity are a deep part of me, more importantly, I want to leave a positive impact on the world, and that's where these would-be nefarious activities actually pay off. While attacking computers to exploit weaknesses for personal gain is clearly wrong, Red Teaming is the ethical manner in which we employee our adversarial skillsets for the better of the world. And I must say, it is very fun :smile:.
+While competitiveness and curiosity are a deep part of me, more importantly, I want to leave a positive impact on the world, and that's where these would-be nefarious activities actually pay off. While attacking computers to exploit weaknesses for personal gain is clearly wrong, Red Teaming is the ethical manner in which we employee our adversarial skillsets for the better of the world. And I must say, it is very fun 😊.
 
-Aside from my career, I have a wonderful family, and enjoy learning new skills and hobbies. I
+Aside from my career, I have a wonderful family, and enjoy learning new skills and hobbies.
 
 For a detailed rundown of my educational and professional experience, please see my [LinkedIn](https://www.linkedin.com/in/ty-anderson-redteamer/) page.
