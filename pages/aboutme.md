@@ -2,6 +2,7 @@
 layout: page
 title: About Me
 subtitle: My professional portfolio
+permalink: /aboutme
 ---
 
 I grew up loving to tinker with technology and computers. When I was eighteen, I built my first full-stack web app, then hacked it to steal all the usernames and passwords. This early experience helped me decide to build my career around coding and hacking. Since 2009, I've been feeding that curiosity and love for computers into a healthy career, which has led me into Red Teaming, where I will probably never leave.

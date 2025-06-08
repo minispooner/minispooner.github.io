@@ -2,6 +2,7 @@
 layout: page
 title: Red Teaming
 subtitle: What is Red Teaming?
+permalink: /redteaming
 ---
 
 # What is Red Teaming?
