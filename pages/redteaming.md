@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Red Teaming
-subtitle: What is Red Teaming?
+subtitle: All things Red Teaming...
 permalink: /redteaming
 ---
 
