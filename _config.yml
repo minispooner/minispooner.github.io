@@ -27,7 +27,7 @@ navbar-links:
     - Medium Blog: "https://medium.com/@ty.anderson.3"
     - GitHub: "https://github.com/minispooner"
     - X: "https://twitter.com/TyAnderson333"
-  Hack Back game: "https://store.steampowered.com/"
+  Hack Back game: "hackbackgame"
 
 ################
 # --- Logo --- #
@@ -284,6 +284,10 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
+
+# Add custom pages dir
+include:
+  - pages
 
 # Exclude these files from production site
 exclude:
