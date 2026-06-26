@@ -1,0 +1,67 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+<style>
+  .md-header { position: initial }
+  .md-main__inner { margin: 0 }
+  .md-content { display: none }
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary { display: none }
+  }
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary { display: none }
+  }
+</style>
+
+<section class="hero-section">
+  <div class="md-grid md-typeset">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="../me.jpg" alt="Ty Anderson" class="hero-photo" />
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="hero-name">Ty Anderson</span></h1>
+        <p class="hero-tagline">
+          Staff Red Team Engineer @Adobe with 14+ years experience making and breaking systems.
+        </p>
+        <!-- <div class="hero-actions">
+          <a href="blog/" class="md-button md-button--primary">Read the Blog</a>
+          <a href="redteamstrategyguide/" class="md-button">Read the Book</a>
+          <a href="hackback/" class="md-button">Play the Game</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="md-grid md-typeset">
+    <div class="about-grid">
+
+      <div class="about-card">
+        <span class="about-card-icon">{% include ".icons/material/pencil.svg" %}</span>
+        <h3><a href="blog/">Blog</a></h3>
+        <p>My posts on offensive security, research projects, strategy, career growth...</p>
+      </div>
+
+      <div class="about-card">
+        <span class="about-card-icon">{% include ".icons/material/shield-search.svg" %}</span>
+        <h3><a href="redteamstrategyguide/">Red Team Strategy Guide</a></h3>
+        <!-- <p>A practical guide to red teaming — from planning engagements to executing and reporting on realistic adversary simulations.</p> -->
+        <p>My practical guide on how to thoughtfully approach red teaming within large organizations to maximize business impact</p>
+      </div>
+
+      <div class="about-card">
+        <span class="about-card-icon">{% include ".icons/material/gamepad-variant.svg" %}</span>
+        <h3><a href="hackback/">Hack Back Game</a></h3>
+        <p>My real-time strategy game where you control hackers to infiltrate networks, deploy malware, and outsmart MegaCorp — teaching real offensive and defensive cybersecurity concepts through engaging gameplay.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block content %}{% endblock %}
+{% block footer %}{{ super() }}{% endblock %}
