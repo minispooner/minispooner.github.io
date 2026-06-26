@@ -1,0 +1,166 @@
+/* Hero section */
+.hero-section {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, #1a0000 100%);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.hero-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 107, 107, 0.6);
+  box-shadow: 0 0 30px rgba(255, 107, 107, 0.25);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem;
+}
+
+.hero-name {
+  color: #ff6b6b;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-actions .md-button {
+  font-size: 1rem;
+  padding: 0.6rem 1.6rem;
+}
+
+.hero-actions .md-button--primary {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+  color: white;
+}
+
+.hero-actions .md-button:not(.md-button--primary) {
+  border-color: rgba(255,255,255,0.5);
+  color: white;
+}
+
+/* About cards section */
+.about-section {
+  padding: 3rem 0;
+  background: var(--md-default-bg-color);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.about-card {
+  padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  background: var(--md-code-bg-color);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.about-card:hover {
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-2px);
+}
+
+.about-card-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.about-card-icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--md-primary-fg-color);
+}
+
+.about-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.about-card p {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Book chapter cards */
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.chapter-card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.chapter-card:hover {
+  background: var(--md-code-bg-color);
+  text-decoration: none;
+}
+
+.chapter-card .chapter-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.4rem;
+}
+
+.chapter-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.chapter-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content { flex-direction: column; text-align: center; }
+  .hero-photo { width: 150px; height: 150px; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-tagline { font-size: 1rem; }
+  .hero-actions { justify-content: center; }
+}
