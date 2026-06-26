@@ -77,11 +77,14 @@
 }
 
 .about-card {
+  display: block;
   padding: 1.5rem;
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 8px;
   background: var(--md-code-bg-color);
   transition: border-color 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .about-card:hover {
