@@ -33,4 +33,4 @@ A short roadmap of the chapters and how they connect. Give readers a reason to k
 
 ---
 
-[Next: 2: The Purpose of Internal Red Teams →](../2-purpose){ .md-button }
+[Next: 2. The Purpose of Internal Red Teams →](2-purpose.md){ .md-button }

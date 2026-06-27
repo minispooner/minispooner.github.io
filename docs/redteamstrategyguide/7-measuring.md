@@ -4,4 +4,4 @@ TODO
 
 ---
 
-[← 1: Introduction](../1-introduction){ .md-button } &nbsp; [3: Marketing & Promoting Red Team Services →](../3-marketing){ .md-button }
+[← 6. Reporting & Influencing Change](6-reporting.md){ .md-button } &nbsp; [8. Outro →](8-outro.md){ .md-button }

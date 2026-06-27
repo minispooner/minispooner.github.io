@@ -4,4 +4,4 @@ TODO
 
 ---
 
-[← 1: Introduction](../1-introduction){ .md-button } &nbsp; [3: Marketing & Promoting Red Team Services →](../3-marketing){ .md-button }
+[← 2. The Purpose of Internal Red Teams](2-purpose.md){ .md-button } &nbsp; [4. Scoping & Planning Operations →](4-scoping.md){ .md-button }

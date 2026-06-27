@@ -73,4 +73,4 @@ Each section stands alone. Jump to whatever's relevant. If you're new to red tea
 
 ## Contributing
 
-Have something to add? Please read through the [Introduction](../redteamstrategyguide/1-introduction), and if your proposed content aligns with the intent of this guide, then open an [Issue or a Pull Request](https://github.com/minispooner/red-team-strategy-guide){:target="\_blank"}.
+Have something to add? Please read through the [Introduction](1-introduction.md), and if your proposed content aligns with the intent of this guide, then open an [Issue or a Pull Request](https://github.com/minispooner/red-team-strategy-guide){:target="\_blank"}.
