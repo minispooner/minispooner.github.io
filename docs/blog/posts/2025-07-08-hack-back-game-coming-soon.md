@@ -57,4 +57,4 @@ Now, I hope you’re as excited about this game as I am! Currently, I have campa
 
 PS: the Coming Soon page is live on Steam
 
-**Update**: Hack Back has been released for free! See more on my website about Hack Back [here](/../hackback/).
+**Update**: Hack Back has been released for free! See more on my website about Hack Back [here](/hackback/).
