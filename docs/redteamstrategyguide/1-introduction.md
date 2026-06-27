@@ -1,6 +1,6 @@
 # Chapter 1: Introduction
 
-*What this chapter covers and why it matters — one sentence.*
+_What this chapter covers and why it matters — one sentence._
 
 ---
 
@@ -8,18 +8,12 @@
 
 Explain what problem this book (and this chapter) is addressing. Make the reader feel the pain before you offer the solution.
 
-## Key Terms
+## personal notes
 
-Before going further, define the vocabulary you'll use throughout the book.
+<!-- prettier-ignore -->
+!!! quote "Personal Story"
 
-**Term One**
-:   A clear, concise definition. No jargon unless it's already been defined.
-
-**Term Two**
-:   Another definition. Keep these short — save the nuance for the body text.
-
-**Term Three**
-:   Definition.
+    When I was a young lad...
 
 ## A Brief History
 
@@ -31,6 +25,7 @@ A short roadmap of the chapters and how they connect. Give readers a reason to k
 
 ---
 
+<!-- prettier-ignore -->
 !!! tip "Chapter Summary"
     - Key point 1 from this chapter
     - Key point 2

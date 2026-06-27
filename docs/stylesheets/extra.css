@@ -116,7 +116,7 @@
   margin: 0;
 }
 
-/* Book chapter cards */
+/* Section cards */
 .chapter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -124,7 +124,7 @@
   margin: 2rem 0;
 }
 
-.chapter-card {
+.section-card {
   display: block;
   padding: 1.5rem;
   border: 1px solid var(--md-default-fg-color--lightest);
@@ -135,12 +135,12 @@
   transition: border-color 0.2s, background 0.2s;
 }
 
-.chapter-card:hover {
+.section-card:hover {
   background: var(--md-code-bg-color);
   text-decoration: none;
 }
 
-.chapter-card .chapter-num {
+.section-card .chapter-num {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -149,12 +149,13 @@
   margin-bottom: 0.4rem;
 }
 
-.chapter-card h3 {
+.section-card strong {
+  display: block;
   margin: 0 0 0.5rem;
   font-size: 1rem;
 }
 
-.chapter-card p {
+.section-card p {
   margin: 0;
   font-size: 0.875rem;
   color: var(--md-default-fg-color--light);

@@ -44,12 +44,16 @@ nav:
   - Hack Back Game: hackback/index.md
   - Red Team Strategy Guide:
       - Overview: redteamstrategyguide/index.md
-      - "Chapter 1: Introduction": redteamstrategyguide/chapter-1.md
-      - "Chapter 2: Core Concepts": redteamstrategyguide/chapter-2.md
-      - "Chapter 3: Advanced Topics": redteamstrategyguide/chapter-3.md
+      - "1: Introduction": redteamstrategyguide/1-introduction.md
+      - "2: The Purpose of Internal Red Teams": redteamstrategyguide/2-purpose.md
+      - "3: Marketing & Promoting Red Team Services": redteamstrategyguide/3-marketing.md
+      - "4: Scoping & Planning Operations": redteamstrategyguide/4-scoping.md
+      - "5: Operating Intentionally": redteamstrategyguide/5-operating.md
+      - "6: Reporting & Influencing Change": redteamstrategyguide/6-reporting.md
+      - "7: Measuring Success": redteamstrategyguide/7-measuring.md
+      - "8: Outro": redteamstrategyguide/8-outro.md
 
 extra:
-  book_title: Red Team Strategy Guide
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ty-anderson-redteamer/

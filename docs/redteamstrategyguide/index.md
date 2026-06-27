@@ -1,54 +1,76 @@
 # Red Team Strategy Guide
 
-_A subtitle that explains what the book is about in one sentence._
+_Thoughtfully approaching red teaming within large organizations to maximize business impact._
 
 ---
 
-## About This Book
+## About This Guide
 
-A paragraph or two on who the book is for, what problem it solves, and what makes it worth reading. Be direct — tell potential readers exactly what they'll get.
+![Red Team Strategy Guide cover](red-team-strategy-guide-cover-img_0.1.png){ align=right width=200 }
+
+The Red Team Strategy Guide (RTSG) is for current and aspiring red team leaders who want to maximize their impact. Red teaming in big companies is ambiguous work, and it's hard to nail down what really matters and actually makes a difference. This guide is not another collection of technical tradecrafts or secret TTPs, rather it provides strategic insight for leaders seeking to build and mature effective red team programs that _influence meaningful security improvements across their organizations_. This is the "impact" I expound on throughout this guide.
 
 ## Who This Is For
 
-- Practitioners who want to understand X
-- People new to the field looking for a structured path
-- Experienced folks who want a reference they can return to
+- Red team leaders who want their operations to drive real security improvements, not just generate reports
+- Senior red teamers looking to grow beyond technical execution into program strategy and leadership
+- Junior red teamers who want to understand the bigger picture early and avoid spending years figuring out what actually matters
+- Security leaders evaluating how to build or mature an internal red team program
 
-## How to Read It
+## How to Use It
 
-The chapters build on each other, but each one can also stand alone as a reference. If you're new, start at Chapter 1. If you have experience, jump to wherever it's relevant.
+Each section stands alone. Jump to whatever's relevant. If you're new to red teaming, start at the beginning.
 
 ---
 
-## Chapters
+## Sections
 
-<div class="chapter-grid" markdown>
+<div class="chapter-grid">
 
-<a href="../redteamstrategyguide/chapter-1/" class="chapter-card" markdown>
-<div class="chapter-num">Chapter 1</div>
-**Introduction**
-
-The problem space, key definitions, and a map of where the book is going.
+<a href="../redteamstrategyguide/1-introduction" class="section-card">
+  <div class="chapter-num">1. Introduction</div>
+  <p>About me, purpose of the guide, defining "impact".</p>
 </a>
 
-<a href="../redteamstrategyguide/chapter-2/" class="chapter-card" markdown>
-<div class="chapter-num">Chapter 2</div>
-**Core Concepts**
-
-The foundational ideas everything else builds on. Read this before anything else.
+<a href="../redteamstrategyguide/2-purpose" class="section-card">
+  <div class="chapter-num">2. The Purpose of Internal Red Teams</div>
+  <p>Why do we red team?</p>
 </a>
 
-<a href="../redteamstrategyguide/chapter-3/" class="chapter-card" markdown>
-<div class="chapter-num">Chapter 3</div>
-**Advanced Topics**
+<a href="../redteamstrategyguide/3-marketing" class="section-card">
+  <div class="chapter-num">3. Marketing & Promoting Red Team Services</div>
+  <p>TODO</p>
+</a>
 
-Deeper material for readers who've mastered the basics.
+<a href="../redteamstrategyguide/4-scoping" class="section-card">
+  <div class="chapter-num">4. Scoping & Planning Operations</div>
+  <p>TODO</p>
+</a>
+
+<a href="../redteamstrategyguide/5-operating" class="section-card">
+  <div class="chapter-num">5. Operating Intentionally</div>
+  <p>TODO</p>
+</a>
+
+<a href="../redteamstrategyguide/6-reporting" class="section-card">
+  <div class="chapter-num">6. Reporting & Influencing Change</div>
+  <p>TODO</p>
+</a>
+
+<a href="../redteamstrategyguide/7-measuring" class="section-card">
+  <div class="chapter-num">7. Measuring Success</div>
+  <p>TODO</p>
+</a>
+
+<a href="../redteamstrategyguide/8-outro" class="section-card">
+  <div class="chapter-num">8. Outro</div>
+  <p>TODO</p>
 </a>
 
 </div>
 
 ---
 
-## Get the Book
+## Contributing
 
-Available in print and digital at [your publisher or store here](https://example.com).
+Have something to add? Please read through the [Introduction](../redteamstrategyguide/1-introduction), and if your proposed content aligns with the intent of this guide, then open an [Issue or a Pull Request](https://github.com/minispooner/red-team-strategy-guide){:target="\_blank"}.
