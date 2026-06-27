@@ -9,11 +9,35 @@
          <lastmod>2026-06-27</lastmod>
     </url>
     <url>
-         <loc>https://tyanderson.red/blog/2026/01/15/welcome-to-the-blog/</loc>
+         <loc>https://tyanderson.red/blog/2021/12/01/saml-hacking-101/</loc>
          <lastmod>2026-06-27</lastmod>
     </url>
     <url>
-         <loc>https://tyanderson.red/blog/2026/03/10/post-title-goes-here/</loc>
+         <loc>https://tyanderson.red/blog/2022/06/04/breaking-into-redteaming/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/2023/11/16/mixed-l33t-rules-generator/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/2025/01/21/preparing-for-a-career-in-offensive-security/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/2025/07/08/hack-back-game-coming-soon/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/2025/08/14/transitioning-from-offsec-to-red-teaming/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/2026/04/09/how-to-find-and-fix-bugs-using-ai-agents/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/</loc>
          <lastmod>2026-06-27</lastmod>
     </url>
     <url>
@@ -61,11 +85,51 @@
          <lastmod>2026-06-27</lastmod>
     </url>
     <url>
-         <loc>https://tyanderson.red/blog/category/research/</loc>
+         <loc>https://tyanderson.red/blog/archive/2025/</loc>
          <lastmod>2026-06-27</lastmod>
     </url>
     <url>
-         <loc>https://tyanderson.red/blog/category/meta/</loc>
+         <loc>https://tyanderson.red/blog/archive/2023/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/archive/2022/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/archive/2021/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/ai-agents/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/red-teaming/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/security/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/career/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/hack-back/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/offensive-security/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/tools/</loc>
+         <lastmod>2026-06-27</lastmod>
+    </url>
+    <url>
+         <loc>https://tyanderson.red/blog/category/appsec/</loc>
          <lastmod>2026-06-27</lastmod>
     </url>
 </urlset>

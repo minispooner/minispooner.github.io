@@ -12,31 +12,29 @@
         <meta name="author" content="Ty Anderson">
       
       
-        <link rel="canonical" href="https://tyanderson.red/blog/">
+        <link rel="canonical" href="https://tyanderson.red/blog/2021/12/01/saml-hacking-101/">
       
       
-        <link rel="prev" href="..">
       
-      
-        <link rel="next" href="../hackback/">
+        <link rel="next" href="../../../../2022/06/04/breaking-into-redteaming/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Blog - Ty Anderson Security</title>
+        <title>SAML Hacking 101 - Ty Anderson Security</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +53,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#saml-hacking-101" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Ty Anderson Security" class="md-header__button md-logo" aria-label="Ty Anderson Security" data-md-component="logo">
+    <a href="../../../../.." title="Ty Anderson Security" class="md-header__button md-logo" aria-label="Ty Anderson Security" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H9.2c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C9.2 8.1 10.6 7 12 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3"/></svg>
@@ -118,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blog
+              SAML Hacking 101
             
           </span>
         </div>
@@ -215,7 +213,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -224,7 +224,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Ty Anderson Security" class="md-nav__button md-logo" aria-label="Ty Anderson Security" data-md-component="logo">
+    <a href="../../../../.." title="Ty Anderson Security" class="md-nav__button md-logo" aria-label="Ty Anderson Security" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 6c1.4 0 2.8 1.1 2.8 2.5V11c.6 0 1.2.6 1.2 1.3v3.5c0 .6-.6 1.2-1.3 1.2H9.2c-.6 0-1.2-.6-1.2-1.3v-3.5c0-.6.6-1.2 1.2-1.2V9.5C9.2 8.1 10.6 7 12 7m0 1.2c-.8 0-1.5.5-1.5 1.3V11h3V9.5c0-.8-.7-1.3-1.5-1.3"/></svg>
@@ -242,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -270,19 +270,10 @@
   
   
     
-      
-    
   
   
     <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   
@@ -298,7 +289,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -310,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hackback/" class="md-nav__link">
+      <a href="../../../../../hackback/" class="md-nav__link">
         
   
   
@@ -389,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/" class="md-nav__link">
         
   
   
@@ -417,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/1-introduction/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/1-introduction/" class="md-nav__link">
         
   
   
@@ -445,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/2-purpose/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/2-purpose/" class="md-nav__link">
         
   
   
@@ -473,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/3-marketing/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/3-marketing/" class="md-nav__link">
         
   
   
@@ -501,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/4-scoping/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/4-scoping/" class="md-nav__link">
         
   
   
@@ -529,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/5-operating/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/5-operating/" class="md-nav__link">
         
   
   
@@ -557,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/6-reporting/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/6-reporting/" class="md-nav__link">
         
   
   
@@ -585,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/7-measuring/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/7-measuring/" class="md-nav__link">
         
   
   
@@ -613,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redteamstrategyguide/8-outro/" class="md-nav__link">
+      <a href="../../../../../redteamstrategyguide/8-outro/" class="md-nav__link">
         
   
   
@@ -649,6 +639,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -661,6 +653,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#saml-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SAML Basics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-impersonation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Impersonation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-of-privileges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escalation of Privileges
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-injection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Injection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xxe-in-saml-acs-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XXE in SAML ACS Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -668,382 +745,132 @@
             
           
           
-  <div class="md-content" data-md-component="content">
-    <div class="md-content__inner">
-      <header class="md-typeset">
-        <h1 id="blog">Blog<a class="headerlink" href="#blog" title="Permanent link">&para;</a></h1>
-      </header>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-04-20 00:00:00+00:00">April 20, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
             
-              <a href="category/ai-agents/" class="md-meta__link">AI Agents</a>, 
-              <a href="category/red-teaming/" class="md-meta__link">Red Teaming</a></li>
-        
-        
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2021-12-01 00:00:00+00:00" class="md-ellipsis">December 1, 2021</time>
+                      </div>
+                    </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+                          <span class="md-ellipsis">
+                            in
+                            
+                              <a href="../../../../category/offensive-security/">Offensive Security</a>, 
+                              <a href="../../../../category/appsec/">AppSec</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              3 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-        
-      </ul>
-      
+        </div>
+      </div>
     </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="using-autonomous-red-vs-blue-labs-to-improve-products-and-detections"><a class="toclink" href="2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">Using Autonomous Red vs Blue Labs To Improve Products and Detections</a></h2>
-<p>Last week I built a team of AI agents to find &amp; exploit vulnerabilities in a product, hunt the intruder, improve detection logging, and redeploy a hardened system. It worked, using under $5 in tokens and without any human interaction.</p>
-<figure>
-  <img alt="Docker Agent" src="2026-04-20-autonomous-red-vs-blue-labs.header.png" /><figcaption>Docker Agent</figcaption>
-</figure>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
 
-    
-      <nav class="md-post__action">
-        <a href="2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2026-04-09 00:00:00+00:00">April 9, 2026</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/ai-agents/" class="md-meta__link">AI Agents</a>, 
-              <a href="category/security/" class="md-meta__link">Security</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              4 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="how-to-find-and-fix-bugs-using-ai-agents"><a class="toclink" href="2026/04/09/how-to-find-and-fix-bugs-using-ai-agents/">How to Find and Fix Bugs Using AI Agents</a></h2>
-<p>We need AI Agents that discover issues, comprehend impact, and initiate prioritized remediation.</p>
-<p>Static secret scanners are insufficient alone. They don't understand impact or prioritize remediation very well. For this project, I wanted to see if I could build an AI agent that could discover one leaked credential, spread to find more credentials, and then safely initiate the rotation and removal of all discovered secrets.</p>
-<p><img alt="How to Find and Fix Bugs Using AI Agents" src="2026-04-09-find-and-fix-bugs-ai-agents.header.png" /></p>
 
-    
-      <nav class="md-post__action">
-        <a href="2026/04/09/how-to-find-and-fix-bugs-using-ai-agents/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-08-14 00:00:00+00:00">August 14, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/red-teaming/" class="md-meta__link">Red Teaming</a>, 
-              <a href="category/career/" class="md-meta__link">Career</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="transitioning-from-offsec-to-red-teaming"><a class="toclink" href="2025/08/14/transitioning-from-offsec-to-red-teaming/">Transitioning From OffSec to Red Teaming</a></h2>
-<p>Over the years, I've seen four common challenges that can hold back offensive security professionals who want to move into red teaming:</p>
-<ul>
-<li>grasping the red teaming philosophy</li>
-<li>adopting an adversarial mindset</li>
-<li>understanding red team operations</li>
-<li>gaining hands-on experience</li>
-</ul>
-<p><img alt="Transitioning From OffSec to Red Teaming" src="2025-08-14-transitioning-from-offsec-to-red-teaming.header.jpg" /></p>
 
-    
-      <nav class="md-post__action">
-        <a href="2025/08/14/transitioning-from-offsec-to-red-teaming/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-08 00:00:00+00:00">July 8, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/hack-back/" class="md-meta__link">Hack Back</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              5 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="hack-back-game-coming-soon"><a class="toclink" href="2025/07/08/hack-back-game-coming-soon/">"Hack Back" Game, Coming Soon…</a></h2>
-<p>I’ve been developing a computer game that immerses players in the battle between hackers and defenders.</p>
-<p><img alt="Hack Back Game, Coming Soon" src="2025-07-08-hack-back-game-coming-soon.header.png" /></p>
 
-    
-      <nav class="md-post__action">
-        <a href="2025/07/08/hack-back-game-coming-soon/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-01-21 00:00:00+00:00">January 21, 2025</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/career/" class="md-meta__link">Career</a>, 
-              <a href="category/offensive-security/" class="md-meta__link">Offensive Security</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              9 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="preparing-for-a-career-in-offensive-security"><a class="toclink" href="2025/01/21/preparing-for-a-career-in-offensive-security/">Preparing for a Career in Offensive Security</a></h2>
-<p>A few of my thoughts and recommendations on preparing for a creer in offensive security (I'm currently a Staff Red Team Engineer at Adobe).</p>
-<p><img alt="Career Path" src="2025-01-21-preparing-for-a-career-in-offensive-security.header.png" /></p>
-
-    
-      <nav class="md-post__action">
-        <a href="2025/01/21/preparing-for-a-career-in-offensive-security/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2023-11-16 00:00:00+00:00">November 16, 2023</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/tools/" class="md-meta__link">Tools</a>, 
-              <a href="category/offensive-security/" class="md-meta__link">Offensive Security</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              7 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="mixed-l33t-rules-generator"><a class="toclink" href="2023/11/16/mixed-l33t-rules-generator/">Mixed L33t Rules Generator</a></h2>
-<p>Sharing a python tool I wrote that generates customizable, mixed l33t rules for JtR and Hashcat.</p>
-<figure>
-  <img alt="M1xed L33t Header Image" src="2023-11-16-mixed-l33t-rules-generator.header.png" />
-</figure>
-
-    
-      <nav class="md-post__action">
-        <a href="2023/11/16/mixed-l33t-rules-generator/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2022-06-04 00:00:00+00:00">June 4, 2022</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/red-teaming/" class="md-meta__link">Red Teaming</a>, 
-              <a href="category/career/" class="md-meta__link">Career</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              6 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="breaking-into-red-teaming"><a class="toclink" href="2022/06/04/breaking-into-redteaming/">Breaking Into Red Teaming</a></h2>
-<p>My journey from college, undergrad jobs, professional jobs, then finally the Red Team.</p>
-<figure>
-<img alt="Wolf Hacker Header Image" src="2022-06-04-breaking-into-red-teaming.header.jpg" />
-</figure>
-
-    
-      <nav class="md-post__action">
-        <a href="2022/06/04/breaking-into-redteaming/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2021-12-01 00:00:00+00:00">December 1, 2021</time></li>
-        
-          <li class="md-meta__item">
-            in
-            
-              <a href="category/offensive-security/" class="md-meta__link">Offensive Security</a>, 
-              <a href="category/appsec/" class="md-meta__link">AppSec</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              3 min read
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="saml-hacking-101"><a class="toclink" href="2021/12/01/saml-hacking-101/">SAML Hacking 101</a></h2>
+<h1 id="saml-hacking-101">SAML Hacking 101<a class="headerlink" href="#saml-hacking-101" title="Permanent link">&para;</a></h1>
 <p>Tips and tricks for hacking SAML SSO authentication flows.</p>
 <figure>
-<img alt="Breaking Authentication Header Image" src="2021-12-01-saml-hacking-101.header.png" />
+<img alt="Breaking Authentication Header Image" src="../../../../2021-12-01-saml-hacking-101.header.png" />
 </figure>
+<!-- more -->
 
-    
-      <nav class="md-post__action">
-        <a href="2021/12/01/saml-hacking-101/">
-          Continue reading
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-      
-        
-          
+<h2 id="saml-basics">SAML Basics<a class="headerlink" href="#saml-basics" title="Permanent link">&para;</a></h2>
+<p>Security Assertion Markup Language (SAML) is an XML-based, Single Sign-On (SSO) authentication flow between two parties: the Identity Provider (IDP) and the Service Provider (SP). The IDP (Okta, Auth0, etc) would be the central identity and authentication/authorization system that is connected to an org's ActiveDirectory for example. The SP would be the application providing the protected service that the end user is attempting to reach.</p>
+<p>In a typical scenario, a user navigates to a protected application, the app redirects the user to the IDP, the user authenticates to the IDP, then the IDP returns a SAML Assertion to the user, which they then forward to the app to login. In order for the app to verify that the IDP has indeed authenticated the user, the app is supposed to validate the assertion's XML signatures - which would protect the assertion from tampering. Hint hint…</p>
+<h2 id="common-issues">Common Issues<a class="headerlink" href="#common-issues" title="Permanent link">&para;</a></h2>
+<p>Because of the complexity of SAML flows, app developers often make mistakes when writing their own SAML consumption code which can lead to XML signature bypass vulnerabilities. While SAML libraries are the right way to go, even they get it wrong sometimes too (SimpleSAMLPHP).</p>
+<p>Additionally, SP SAML ACS endpoints process IDP SAML Assertion XML and can therefore have XXE vulnerabilities. This would happen before any authentication takes place.</p>
+<h2 id="user-impersonation">User Impersonation<a class="headerlink" href="#user-impersonation" title="Permanent link">&para;</a></h2>
+<p>SAML XML signature validation bypass can lead to impersonation of other app users. To hack it, download a free copy of BurpSuite Community Edition and install the SAML Raider plugin. It's got about 12 different SAML XML signature attacks including stripping signatures, signing assertions with your own self-signed keypair, and various XML Signature Wrapping (XSW) attack arrangements. As you craft the payloads in SAML Raider, try modifying the username in the assertion to impersonate another user. Be patient and try all the attacks - maybe one will get past app signature checks!</p>
+<h2 id="escalation-of-privileges">Escalation of Privileges<a class="headerlink" href="#escalation-of-privileges" title="Permanent link">&para;</a></h2>
+<p>In the event where a signature bypass is successful, you can tamper with SAML assertion contents. Often times, SAML assertions will contain not only the username of the user, but also additional attributes like role or other permissions-related attributes. Try modifying the user role attributes to "admin" for example.</p>
+<h2 id="code-injection">Code Injection<a class="headerlink" href="#code-injection" title="Permanent link">&para;</a></h2>
+<p>Additionally, if there are no validations on what values are submitted over SAML, consider likely business logic processing or application flow. For example, application logic may be including assertion attributes into the application code. Perhaps a username or first name attribute is included in the front-end on the profile page, potentially resulting in XSS. Or if sent to the in the backend, then SQL or LDAP queries, or template injection could be exploited, etc. This of course depends on the application's languages and technologies in use.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">Welcome</span><span class="p">,</span><span class="w"> </span><span class="nx">Victim</span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span><span class="nx">alert</span><span class="p">(</span><span class="mf">1</span><span class="p">)</span><span class="o">&lt;</span><span class="err">/script&gt; Lastname!</span>
+</code></pre></div>
+<h2 id="xxe-in-saml-acs-endpoint">XXE in SAML ACS Endpoint<a class="headerlink" href="#xxe-in-saml-acs-endpoint" title="Permanent link">&para;</a></h2>
+<p>Because SAML is XML-based, the application uses an XML parser called an Assertion Consumer Service (ACS) to consume and process SAML Assertions. Anytime XML is being processed, there's an opportunity for XXE injection.</p>
+<p>The nice thing here is that the XML processing occurs before any SAML or signature validation, so it can be exploited pre-authentication, meaning we don't need any IDP signatures or valid SAML - just the XXE!</p>
+<h2 id="additional-resources">Additional Resources<a class="headerlink" href="#additional-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>My older blog for scaled testing: <a href="https://blog.developer.adobe.com/automating-enterprise-saml-security-tests-part-i-1c7b0741e07a">Automating Enterprise SAML Security Tests - Part 1</a></li>
+<li>My older blog for scaled testing: <a href="https://blog.developer.adobe.com/automating-enterprise-saml-security-tests-part-ii-1d2cddb76e4f">Automating Enterprise SAML Security Tests - Part 2</a></li>
+<li><a href="https://book.hacktricks.xyz/pentesting-web/saml-attacks">HackTricks</a></li>
+<li><a href="https://portswigger.net/bappstore/c61cfa893bb14db4b01775554f7b802e">BurpSuite SAML Raider</a></li>
+<li><a href="https://developer.okta.com/blog/2018/02/27/a-breakdown-of-the-new-saml-authentication-bypass-vulnerability">Comments attack</a></li>
+</ul>
 
 
 
-<nav class="md-pagination">
+
+
+
+
   
-</nav>
-        
+  
+
+
+
+
+  
+
+
+
       
-    </div>
+    </article>
   </div>
 
           
@@ -1125,10 +952,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.sections", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
