@@ -27,42 +27,42 @@ Each section stands alone. Jump to whatever's relevant. If you're new to red tea
 
 <div class="chapter-grid">
 
-<a href="../redteamstrategyguide/1-introduction" class="section-card">
+<a href="../redteamstrategyguide/1-introduction/" class="section-card">
   <div class="chapter-num">1. Introduction</div>
   <p>About me, purpose of the guide, defining "impact".</p>
 </a>
 
-<a href="../redteamstrategyguide/2-purpose" class="section-card">
+<a href="../redteamstrategyguide/2-purpose/" class="section-card">
   <div class="chapter-num">2. The Purpose of Internal Red Teams</div>
   <p>Why do we red team?</p>
 </a>
 
-<a href="../redteamstrategyguide/3-marketing" class="section-card">
+<a href="../redteamstrategyguide/3-marketing/" class="section-card">
   <div class="chapter-num">3. Marketing & Promoting Red Team Services</div>
   <p>TODO</p>
 </a>
 
-<a href="../redteamstrategyguide/4-scoping" class="section-card">
+<a href="../redteamstrategyguide/4-scoping/" class="section-card">
   <div class="chapter-num">4. Scoping & Planning Operations</div>
   <p>TODO</p>
 </a>
 
-<a href="../redteamstrategyguide/5-operating" class="section-card">
+<a href="../redteamstrategyguide/5-operating/" class="section-card">
   <div class="chapter-num">5. Operating Intentionally</div>
   <p>TODO</p>
 </a>
 
-<a href="../redteamstrategyguide/6-reporting" class="section-card">
+<a href="../redteamstrategyguide/6-reporting/" class="section-card">
   <div class="chapter-num">6. Reporting & Influencing Change</div>
   <p>TODO</p>
 </a>
 
-<a href="../redteamstrategyguide/7-measuring" class="section-card">
+<a href="../redteamstrategyguide/7-measuring/" class="section-card">
   <div class="chapter-num">7. Measuring Success</div>
   <p>TODO</p>
 </a>
 
-<a href="../redteamstrategyguide/8-outro" class="section-card">
+<a href="../redteamstrategyguide/8-outro/" class="section-card">
   <div class="chapter-num">8. Outro</div>
   <p>TODO</p>
 </a>

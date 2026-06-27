@@ -1,4 +1,4 @@
-# 2. The Purpose of Internal Red Teams
+# 8. Outro
 
 TODO
 

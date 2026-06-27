@@ -1,4 +1,4 @@
-# Chapter 1: Introduction
+# 1. Introduction
 
 _What this chapter covers and why it matters — one sentence._
 
@@ -33,4 +33,4 @@ A short roadmap of the chapters and how they connect. Give readers a reason to k
 
 ---
 
-[Next: Chapter 2 →](chapter-2.md){ .md-button }
+[Next: 2: The Purpose of Internal Red Teams →](../2-purpose){ .md-button }
