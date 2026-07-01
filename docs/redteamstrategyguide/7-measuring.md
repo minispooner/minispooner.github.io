@@ -1,7 +1,7 @@
 # 7. Measuring Success
 
-TODO
+Coming soon...
 
 ---
 
-[← 6. Reporting & Influencing Change](6-reporting.md){ .md-button } &nbsp; [8. Outro →](8-outro.md){ .md-button }
+[← 6. Reporting & Influencing Change](6-reporting.md){ .md-button } &nbsp; [8. Conclusion →](8-conclusion.md){ .md-button }

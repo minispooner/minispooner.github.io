@@ -1,6 +1,6 @@
 # 4. Scoping & Planning Operations
 
-TODO
+Coming soon...
 
 ---
 

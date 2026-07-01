@@ -1,6 +1,6 @@
 # 3. Marketing & Promoting Red Team Services
 
-TODO
+Coming soon...
 
 ---
 

@@ -1,7 +1,8 @@
 site_name: Ty Anderson Security
 site_url: https://tyanderson.red/
-site_description: Security researcher, red teamer, and author
+site_description: Ty Anderson's professional website for publishing red teaming and offensive security content
 site_author: Ty Anderson
+copyright: Copyright &copy; 2020–2026 Ty Anderson
 
 theme:
   name: material
@@ -51,9 +52,12 @@ nav:
       - "5. Operating Intentionally": redteamstrategyguide/5-operating.md
       - "6. Reporting & Influencing Change": redteamstrategyguide/6-reporting.md
       - "7. Measuring Success": redteamstrategyguide/7-measuring.md
-      - "8. Outro": redteamstrategyguide/8-outro.md
+      - "8. Conclusion": redteamstrategyguide/8-conclusion.md
 
 extra:
+  analytics:
+    provider: google
+    property: G-P42WDFLWPX
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ty-anderson-redteamer/

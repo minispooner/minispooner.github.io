@@ -1,6 +1,8 @@
 # Red Team Strategy Guide
 
-_Thoughtfully approaching red teaming within large organizations to maximize business impact._
+_How to thoughtfully approach red teaming within large organizations to maximize business impact._
+
+_Views and opinions are my own._
 
 ---
 
@@ -8,7 +10,7 @@ _Thoughtfully approaching red teaming within large organizations to maximize bus
 
 ![Red Team Strategy Guide cover](red-team-strategy-guide-cover-img_0.1.png){ align=right width=200 }
 
-The Red Team Strategy Guide (RTSG) is for current and aspiring red team leaders who want to maximize their impact. Red teaming in big companies is ambiguous work, and it's hard to nail down what really matters and actually makes a difference. This guide is not another collection of technical tradecrafts or secret TTPs, rather it provides strategic insight for leaders seeking to build and mature effective red team programs that _influence meaningful security improvements across their organizations_. This is the "impact" I expound on throughout this guide.
+The Red Team Strategy Guide (RTSG) is for current and aspiring red team leaders who want to maximize their business impact. Red teaming in big companies is ambiguous work, and it's hard to nail down what really matters and actually makes a difference. This guide is not another collection of technical tradecraft or secret TTPs, rather it provides strategic insight for leaders seeking to build and mature effective red team programs that _influence meaningful security improvements across their organizations_. This is the "impact" we will explore throughout this guide.
 
 ## Who This Is For
 
@@ -17,54 +19,53 @@ The Red Team Strategy Guide (RTSG) is for current and aspiring red team leaders 
 - Junior red teamers who want to understand the bigger picture early and avoid spending years figuring out what actually matters
 - Security leaders evaluating how to build or mature an internal red team program
 
-## How to Use It
+## How to Use This Guide
 
-Each section stands alone. Jump to whatever's relevant. If you're new to red teaming, start at the beginning.
+Each section stands alone, so jump to whatever's relevant. If you're just getting into red team leadership, I recommend starting at the beginning.
 
----
-
-## Sections
+To help with speed reading, I provide Takeaways that summarize section content. For readers wanting a deeper understanding, Story Time boxes throughout the guide share real-world examples and stories.
 
 <div class="chapter-grid">
 
 <a href="../redteamstrategyguide/1-introduction/" class="section-card">
   <div class="chapter-num">1. Introduction</div>
-  <p>About me, purpose of the guide, defining "impact".</p>
+  <p>The purpose of this guide and understanding business impact.</p>
 </a>
 
 <a href="../redteamstrategyguide/2-purpose/" class="section-card">
   <div class="chapter-num">2. The Purpose of Internal Red Teams</div>
-  <p>Why do we red team?</p>
+  <p>How clarity of purpose shapes vision and direction.</p>
 </a>
 
 <a href="../redteamstrategyguide/3-marketing/" class="section-card">
   <div class="chapter-num">3. Marketing & Promoting Red Team Services</div>
-  <p>TODO</p>
+  <p>How to increase demand to improve operation results.</p>
 </a>
 
 <a href="../redteamstrategyguide/4-scoping/" class="section-card">
   <div class="chapter-num">4. Scoping & Planning Operations</div>
-  <p>TODO</p>
+  <p>How to choose, scope, and plan operations to ensure success.
+  </p>
 </a>
 
 <a href="../redteamstrategyguide/5-operating/" class="section-card">
   <div class="chapter-num">5. Operating Intentionally</div>
-  <p>TODO</p>
+  <p>How understanding and reason lead to better outcomes.</p>
 </a>
 
 <a href="../redteamstrategyguide/6-reporting/" class="section-card">
   <div class="chapter-num">6. Reporting & Influencing Change</div>
-  <p>TODO</p>
+  <p>Using storytelling and statements to influence without authority.</p>
 </a>
 
 <a href="../redteamstrategyguide/7-measuring/" class="section-card">
   <div class="chapter-num">7. Measuring Success</div>
-  <p>TODO</p>
+  <p>Is your red team actually successful as a business unit?</p>
 </a>
 
-<a href="../redteamstrategyguide/8-outro/" class="section-card">
-  <div class="chapter-num">8. Outro</div>
-  <p>TODO</p>
+<a href="../redteamstrategyguide/8-conclusion/" class="section-card">
+  <div class="chapter-num">8. Conclusion</div>
+  <p>Where to start, what to prioritize, and how to measure your progress.</p>
 </a>
 
 </div>

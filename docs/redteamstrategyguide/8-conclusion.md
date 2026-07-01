@@ -1,6 +1,6 @@
-# 8. Outro
+# 8. Conclusion
 
-TODO
+Coming soon...
 
 ---
 

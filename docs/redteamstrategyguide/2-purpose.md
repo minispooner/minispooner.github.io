@@ -1,6 +1,6 @@
 # 2. The Purpose of Internal Red Teams
 
-TODO
+Coming soon...
 
 ---
 

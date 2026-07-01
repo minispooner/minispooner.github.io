@@ -1,6 +1,6 @@
 # 5. Operating Intentionally
 
-TODO
+Coming soon...
 
 ---
 
