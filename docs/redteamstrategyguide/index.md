@@ -23,7 +23,7 @@ The Red Team Strategy Guide (RTSG) is for current and aspiring red team leaders 
 
 Each section stands alone, so jump to whatever's relevant. If you're just getting into red team leadership, I recommend starting at the beginning.
 
-To help with speed reading, I provide Takeaways that summarize section content. For readers wanting a deeper understanding, Story Time boxes throughout the guide share real-world examples and stories.
+To help with speed reading, each section begins with Takeaways that summarize the content. For readers wanting a deeper understanding, Story Time boxes throughout the guide share real-world examples and stories.
 
 <div class="chapter-grid">
 
