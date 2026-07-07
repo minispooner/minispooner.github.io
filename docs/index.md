@@ -1,6 +1,6 @@
 ---
 template: home.html
-title: Ty Anderson Security
+title: Home
 hide:
   - navigation
   - toc
