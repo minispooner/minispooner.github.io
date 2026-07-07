@@ -2,7 +2,7 @@ site_name: Ty Anderson Security
 site_url: https://tyanderson.red/
 site_description: Ty Anderson's professional website for publishing red teaming and offensive security content
 site_author: Ty Anderson
-copyright: Copyright &copy; 2020–2026 Ty Anderson
+copyright: Copyright &copy; 2020–2026 Ty Anderson. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener">CC BY 4.0</a>.
 
 theme:
   name: material
