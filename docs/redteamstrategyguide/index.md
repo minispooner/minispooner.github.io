@@ -39,7 +39,7 @@ To help with speed reading, each section begins with Takeaways that summarize th
 
 <a href="../redteamstrategyguide/3-marketing/" class="section-card">
   <div class="chapter-num">3. Marketing & Promoting Red Team Services</div>
-  <p>How to increase demand to improve operation results.</p>
+  <p>How to increase demand to expand your sphere of influence.</p>
 </a>
 
 <a href="../redteamstrategyguide/4-scoping/" class="section-card">
