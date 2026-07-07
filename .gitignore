@@ -1,2 +1,3 @@
 # Ignore build outputs - builds are generated and pushed with `mkdocs gh-deploy`
 site/
+.DS_Store
