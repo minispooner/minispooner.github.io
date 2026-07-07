@@ -42,6 +42,11 @@
   margin-bottom: 2rem;
 }
 
+.hero-disclaimer {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;

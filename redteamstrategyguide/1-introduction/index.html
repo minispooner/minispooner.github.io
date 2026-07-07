@@ -426,6 +426,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introduction
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -442,6 +460,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-im-writing-the-rtsg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why I'm Writing the RTSG
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defining Impact
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Impact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edge-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-impact-vs-business-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Impact vs Business Impact
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Ahead
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -671,6 +769,75 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-im-writing-the-rtsg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why I'm Writing the RTSG
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defining-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defining Impact
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Defining Impact">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edge-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edge Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-impact-vs-business-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Impact vs Business Impact
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Ahead
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -687,8 +854,53 @@
 
 
 <h1 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h1>
-<p><em>Why I wrote this guide and what "impact" really means.</em></p>
-<p>Coming soon...</p>
+<p><em>Why I wrote the Red Team Strategy Guide (RTSG) and what "impact" really means.</em></p>
+<!-- prettier-ignore -->
+<div class="admonition tip">
+<p class="admonition-title">Takeaways</p>
+<ul>
+<li>RTSG focuses on maximizing business impact from red team operations (i.e. influencing security improvements)</li>
+<li>RTSG offers tips and advice on how to run a red team program effectively, as opposed to detailing how to technically execute red team operations</li>
+<li>RTSG is built on 16+ years of security experience, ~5 years of it red teaming</li>
+</ul>
+</div>
+<hr />
+<h2 id="why-im-writing-the-rtsg">Why I'm Writing the RTSG<a class="headerlink" href="#why-im-writing-the-rtsg" title="Permanent link">&para;</a></h2>
+<p>Red teaming in large organizations is ambiguous work. Unlike an engineering team shipping features or closing tickets, a red team's output is a set of findings and recommendations. Some argue that the success of a red team ultimately depends on whether other teams act on our findings, while others claim that our value lies in the unbiased delivery of adversarial perspective, regardless of how the receiving end takes it. They're both right, and both are worth pursuing, but knowing when to lean on each matters &mdash; more on this in <a href="../2-purpose/">2. The Purpose of Internal Red Teams</a>. Without a deep understanding of our red team purpose and how we fit into the overall strategy of a large security organization, it's easy to mistake activity (operations run, reports written, vulnerabilities found) for actual outcomes.</p>
+<p>Over my 16+ years of security experience, I've been exposed to thousands of statements, blogs, presentations, and pitches about security work and projects. They often talk about what was built or found, but with little mention of the resulting impact. This focus on technical detail and the "what we did" is understandably more common in less-experienced Individual Contributors (ICs), as it typically coincides with their role expectations &mdash; they're usually the doers. The pattern isn't limited to early-career ICs, though; I've seen plenty of mid-career and even senior leaders struggle with the concept of impact as well.</p>
+<p>Over the last five years of red teaming, I've identified several key areas that have consistently helped me lead successful red team operations. In this guide, I distill my experience and lessons learned into several sections to help other red teams and security teams maximize their business impact. Because individual circumstances and needs vary, rather than trying to precisely replicate my actions or stories, I'd encourage you to adapt the principles and processes to fit your unique needs. The bulk of this guide is written for red teams, but many of the concepts apply to other security functions as well, since we all typically share the same overarching objectives of maintaining and improving security &mdash; we just do it in different ways.</p>
+<h2 id="defining-impact">Defining Impact<a class="headerlink" href="#defining-impact" title="Permanent link">&para;</a></h2>
+<p>There are lots of different reasons why companies implement various security functions. Each function should have a purpose, and their various security initiatives should deliver value in unique ways, such as achieving compliance, enabling sales, or hunting adversaries. These outcomes can all be impactful, so long as they align with the security function's purpose and goals.</p>
+<p>When I refer to "impact" throughout this guide, such as in "delivering impactful work", I'm typically referring to <em>actually improving security</em>, or <em>clearly and strongly influencing security improvements</em>. Most red teams, for example, don't actively engineer solutions or patch vulnerabilities, but their outputs directly inform and influence security investments and improvements. Therefore, their business impact falls into the influencing category.</p>
+<p>Other teams, however, may play a more active role in literally making changes to code and systems to harden the perimeter or add defense-in-depth controls, both of which directly improve security by reducing risk. Both are legitimate approaches, though influential security teams like red teams are insufficient on their own, as there is generally no improvement unless it is made by another team &mdash; again, a topic I'll cover more in <a href="../2-purpose/">2. The Purpose of Internal Red Teams</a>.</p>
+<h3 id="edge-cases">Edge Cases<a class="headerlink" href="#edge-cases" title="Permanent link">&para;</a></h3>
+<p>There are a couple of edge cases where security work can still be impactful, despite security improvements not actually being the primary objectives. I'll briefly offer some thoughts on these, but will mostly refrain from comment throughout the rest of the guide.</p>
+<p>The first case I'll touch on is <em>supportive security work</em>. While it can be impactful, there should be very clear, concrete evidence to support its value. For example, if it is necessary to enable or facilitate other legitimate security improvements, or if it significantly contributes to security improvements, then it could be useful. Unfortunately, I've seen a lot of security work inappropriately justified under the guise of being "supportive", when there is little or weak evidence that it actually made a significant difference. When there is clear and strong evidence that the supportive work is leading to security improvements, then it does fall within my definition of impact.</p>
+<p>Another large pillar of security work that is not in scope for my guide is compliance. Generally speaking, if a company wants to improve their security, they don't dive into compliance as a solution. While compliance may establish a minimum baseline, it is not a vehicle for meaningful security improvement. For example, there have been several major breaches over the past few years, despite the companies holding compliance certifications (LastPass 2022, Okta 2023, Change Healthcare 2024). Compliance is a point-in-time goal to satisfy legal requirements and increase sales. Because the primary goal of compliance work is certification, not continuous security improvement, I don't include it in my content or comments on security work aimed at improving security.</p>
+<h3 id="technical-impact-vs-business-impact">Technical Impact vs Business Impact<a class="headerlink" href="#technical-impact-vs-business-impact" title="Permanent link">&para;</a></h3>
+<p>It's important to make a clear distinction between "technical impact" and "business impact". Unfortunately, I often see security folks fixated on the technical results of their work and not the actual impact of it. Below are a few examples of how a team may attempt to classify their technical output as impactful. In certain scenarios, these results may indeed align with strategic objectives, but for our examples, we'll weigh the technical results vs. outcomes from a different perspective.</p>
+<ul>
+<li>In a recent penetration test, we compromised the administrative console and obtained read access to all customer directories.</li>
+<li>Last quarter, we integrated 20 new secret detection signatures, increasing our coverage by 50%, and total detections by 5%.</li>
+<li>During our last incident, we used AI agents to analyze 100+ data sources to assist us in our investigation, saving 4 hours of human work, landing us 10% under the Average Time to Close for our incident.</li>
+</ul>
+<p>While these "wins" may appear impressive, additional context could severely erode much of the perceived success:</p>
+<ul>
+<li>The product platform is EOL, 90% of the users have already completed migration to the newer systems, and the customer directories are empty or only contain public, default product install data.</li>
+<li>The new detections are for niche API keys only found in legacy repositories, typically no longer running in production services. They do not represent credentials that have been abused in recent incidents or that would typically lead to severe consequences.</li>
+<li>While AI may have saved the Incident Response team time, they were still ultimately unable to identify the adversary's point of entry or what was actually stolen. These results indicate a significant gap in the team's ability to perform their baseline responsibilities, that of containing, mitigating, and recovering from incidents.</li>
+</ul>
+<p>The above examples show how apparent success may not actually lead to business impact. These are sometimes referred to as "vanity metrics", where surface-level data points may look impressive but offer no real insight into the true business performance or success. These metrics can often crumble under the pressure of a little skeptical questioning.</p>
+<p>Now, if the original scenarios were approached with a business impact-focused mindset, the results may have been much more meaningful:</p>
+<ul>
+<li>Four out of six of our latest pentests have surfaced authentication-related vulnerabilities, each stemming from a misconfigured authentication plugin. We've documented the common misconfigurations on the internal platform page and are scheduling presentations across major engineering orgs to share our findings and recommendations to prevent recurrence. We've also shared custom semgrep rules with our source code scanning team to identify misconfigurations in source code to help eliminate other vulnerabilities that we are unable to manually assess.</li>
+<li>Last quarter, we collaborated with the Threat Intel Team and the Red Team to identify the top 5 secrets that are most-commonly exploited, and we've implemented hard blocks to prevent those patterns from being pushed into our code bases. We also ticketed all current findings of these secrets, 75% of which have already been removed from source code and rotated. Additionally, we followed up with the Incident Response Team yesterday who reported that incidents have dropped by 5%, and then 10%, over the last two months. Their data confirms that there are significantly fewer incidents originating from these aforementioned secrets types.</li>
+<li>During our last incident, we used our new AI agent to investigate and identify logging gaps on the compromised machine. After it identified several logs that could help with adversary attribution, it then provided configuration recommendations to us that we've successfully tested with the engineering team. We're in the process of rolling these updates out to all applicable endpoints so that we can better identify and track adversaries in our networks during future incidents.</li>
+</ul>
+<p>In the last examples provided, the actions and reports move away from shiny technical output metrics and draw closer to how the results actually improved security. I also made a point to showcase the scale of the effects of the projects, something we'll revisit when discussing how to scale outcomes at the end of an operation in <a href="../5-operating/">5. Operating Intentionally</a>.</p>
+<h2 id="whats-ahead">What's Ahead<a class="headerlink" href="#whats-ahead" title="Permanent link">&para;</a></h2>
+<p>I love to quote the Cheshire Cat, from Lewis Carroll's <em>Alice's Adventures in Wonderland</em>. When Alice asks which way to go, the cat responds, "That depends a good deal on where you want to get to." Without a clear purpose, a red team's efforts become a scattered, shotgun spray, relying on hope that something lands. However, when we do understand our purpose and where we want to be, we can target specific outcomes with the precision of a sniper.</p>
+<p>That's why the rest of this guide follows a typical operational sequence of a red team, starting with purpose. <a href="../2-purpose/">2. The Purpose of Internal Red Teams</a> comes first because it clarifies what counts as impact for your red team. From there, <a href="../3-marketing/">3. Marketing &amp; Promoting Red Team Services</a> and <a href="../4-scoping/">4. Scoping &amp; Planning Operations</a> determine what work gets done and why. <a href="../5-operating/">5. Operating Intentionally</a> governs how it gets executed, and <a href="../6-reporting/">6. Reporting &amp; Influencing Change</a> and <a href="../7-measuring/">7. Measuring Success</a> close the loop by translating results into influence and proving whether that influence actually moved the needle. Each section adds specific benefits to the overall impact of red team deliverables, and we'll explore each throughout the guide.</p>
 <p><a class="md-button" href="../2-purpose/">Next: 2. The Purpose of Internal Red Teams →</a></p>
 
 
