@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% set title = config.site_name %}
+  {% if page.meta and page.meta.title %}
+    {% set title = title ~ " - " ~ page.meta.title %}
+  {% elif page.title and not page.is_homepage %}
+    {% set title = title ~ " - " ~ (page.title | striptags) %}
+  {% endif %}
+  {% set description = page.meta.description if page.meta and page.meta.description else config.site_description %}
+  {% set og_title = page.meta["og:title"] if page.meta and page.meta["og:title"] else title %}
+  {% set og_description = page.meta["og:description"] if page.meta and page.meta["og:description"] else description %}
+  {% set image = page.meta["og:image"] %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ og_title }}">
+  <meta property="og:description" content="{{ og_description }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title }}">
+  <meta name="twitter:description" content="{{ og_description }}">
+  <meta name="twitter:image" content="{{ image }}">
+{% endblock %}
