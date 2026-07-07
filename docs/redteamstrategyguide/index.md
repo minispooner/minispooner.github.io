@@ -50,12 +50,12 @@ To help with speed reading, each section begins with Takeaways that summarize th
 
 <a href="../redteamstrategyguide/5-operating/" class="section-card">
   <div class="chapter-num">5. Operating Intentionally</div>
-  <p>How understanding and reason lead to better outcomes.</p>
+  <p>How goals and objectives direct operator actions.</p>
 </a>
 
 <a href="../redteamstrategyguide/6-reporting/" class="section-card">
   <div class="chapter-num">6. Reporting & Influencing Change</div>
-  <p>Using storytelling and statements to influence without authority.</p>
+  <p>Using storytelling and facts to influence without authority.</p>
 </a>
 
 <a href="../redteamstrategyguide/7-measuring/" class="section-card">
