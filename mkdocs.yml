@@ -30,6 +30,7 @@ theme:
     - content.tabs.link
   icon:
     logo: material/shield-lock
+  favicon: assets/favicon.svg
 
 plugins:
   - search
