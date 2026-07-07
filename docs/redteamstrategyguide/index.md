@@ -14,7 +14,7 @@ The Red Team Strategy Guide (RTSG) is for current and aspiring red team leaders 
 
 ## Who This Is For
 
-- Red team leaders who want their operations to drive real security improvements, not just generate reports
+- Red team leaders who want their operations to influence significant security improvements
 - Senior red teamers looking to grow beyond technical execution into program strategy and leadership
 - Junior red teamers who want to understand the bigger picture early and avoid spending years figuring out what actually matters
 - Security leaders evaluating how to build or mature an internal red team program
