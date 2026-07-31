@@ -2,6 +2,10 @@
 
 # Hack Back
 
+Update: _As of July 2026, over **15,000** people have added my cybersecurity game, Hack Back, into their Steam libraries!_ 🎮
+
+---
+
 In 2024, I developed **Hack Back**, a real-time strategy game where you play through a fun campaign as an Offensive Security Engineer. Inspired by StarCraft, you control various heroes and units to launch network attacks against MegaCorp bad guys while defending your own base from counterstrikes.
 
 The game incorporates cybersecurity principles into engaging gameplay mechanics to teach the world about offensive and defensive security concepts in a simple way.
@@ -14,6 +18,6 @@ The game incorporates cybersecurity principles into engaging gameplay mechanics 
 
 ## Current State
 
-I released the first two levels of the game for **free** on Steam. I currently don't have plans of continuing development past these initial two levels. Last I checked, there were about 14k downloads.
+I released the first two levels of the game for **free** on Steam. I currently don't have plans of continuing development past these initial two levels.
 
 [:simple-steam: Free Download on Steam](https://store.steampowered.com/app/3709680/Hack_Back/){ .md-button .md-button--primary }
