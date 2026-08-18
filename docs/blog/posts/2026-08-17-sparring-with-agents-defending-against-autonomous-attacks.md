@@ -26,6 +26,9 @@ _These attack agents are tightly guardrailed and closely monitored. I plan to sh
 
 <!-- more -->
 
+WIP...
+
+<!--
 ## What Sets Autonomous Attacks Apart
 
 Modern AI agents can operate at a speed and scale humans can't match. This makes them particularly dangerous in cyber attacks because they can find and exploit weaknesses faster than humanly possible. It's helpful to set aside our traditional security mindset and instead consider how AI agents actually reason and act during an attack.
@@ -91,3 +94,4 @@ Moving any of these three metrics upward is a measurable defensive improvement w
 ## Closing & Next Steps
 
 Conducting adversarial tests and obtaining measurements of current defenses is only the first part of the equation. Ultimately, those measurements should be used to inform and influence positive security change. Next, I plan to test these theories to identify which measures actually make it harder for autonomous attacks to succeed. Every round of sparring &mdash; testing, measuring, adjusting &mdash; should leave the defense a little better than last time.
+ -->
