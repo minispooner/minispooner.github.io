@@ -1,6 +1,7 @@
 ---
 date: 2026-04-09
 og:image: "https://tyanderson.red/blog/2026-04-09-find-and-fix-bugs-ai-agents.header.png"
+description: "How I built an AI agent that discovers leaked credentials, traces their impact, and safely initiates rotation and remediation."
 categories:
   - AI Agents
   - Security

@@ -1,6 +1,7 @@
 ---
 date: 2026-04-20
 og:image: "https://tyanderson.red/blog/2026-04-20-autonomous-red-vs-blue-labs.header.png"
+description: "Last week I built a team of AI agents to find & exploit vulnerabilities in a product, hunt the intruder, improve detection logging, and redeploy a hardened system. It worked, using under $5 in tokens and without any human interaction."
 categories:
   - AI Agents
   - Red Teaming

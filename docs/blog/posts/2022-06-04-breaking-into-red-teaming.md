@@ -1,6 +1,7 @@
 ---
 date: 2022-06-04
 og:image: "https://tyanderson.red/blog/2022-06-04-breaking-into-red-teaming.header.jpg"
+description: "My journey from college, through undergrad and professional jobs, to finally landing on the Red Team."
 categories:
   - Red Teaming
   - Career

@@ -1,6 +1,7 @@
 ---
 date: 2025-07-08
 og:image: "https://tyanderson.red/blog/2025-07-08-hack-back-game-coming-soon.header.png"
+description: "A first look at Hack Back, my computer game that immerses players in the battle between hackers and defenders."
 categories:
   - Hack Back
 tags:

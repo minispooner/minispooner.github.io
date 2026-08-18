@@ -1,6 +1,7 @@
 ---
 date: 2026-08-17
 og:image: "https://tyanderson.red/blog/2026-08-17-sparring-with-agents-defending-against-autonomous-attacks.header.png"
+description: "Some initial thoughts on metrics for measuring and improving an organization's defensibility against autonomous AI attackers, drawn from my own offensive automation."
 categories:
   - AI Agents
   - Red Teaming

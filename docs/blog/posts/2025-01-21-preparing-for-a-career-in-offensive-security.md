@@ -1,6 +1,7 @@
 ---
 date: 2025-01-21
 og:image: "https://tyanderson.red/blog/2025-01-21-preparing-for-a-career-in-offensive-security.header.png"
+description: "Thoughts and recommendations on preparing for a career in offensive security, from a Staff Red Team Engineer at Adobe."
 categories:
   - Career
   - Offensive Security

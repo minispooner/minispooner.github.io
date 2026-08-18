@@ -1,6 +1,7 @@
 ---
 date: 2025-08-14
 og:image: "https://tyanderson.red/blog/2025-08-14-transitioning-from-offsec-to-red-teaming.header.jpg"
+description: "Four common challenges that hold back offensive security professionals moving into red teaming, and how to work through them."
 categories:
   - Red Teaming
   - Career
