@@ -704,7 +704,7 @@
           
           <li class="md-meta__item">
             
-              1 min read
+              6 min read
             
           </li>
         
@@ -715,7 +715,8 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="sparring-with-agents-defending-against-autonomous-attacks"><a class="toclink" href="2026/08/17/sparring-with-agents-defending-against-autonomous-attacks/">Sparring with Agents: Defending Against Autonomous Attacks</a></h2>
-<p>I recently built an autonomous attack system and deployed it against several live production systems. After successfully reaching post-exploitation impact, I considered what would have stopped it, and I came up with several metrics that organizations can track to measure and improve their defensibility specifically against autonomous attackers. In this post, I'll introduce three metrics and several ways to influence them.</p>
+<p>I recently built an autonomous attack system and deployed it against several live production systems. After successfully reaching post-exploitation impact, I asked myself what would have stopped it, and I came up with several potential metrics that organizations might track to measure and improve their defensibility specifically against autonomous attackers. In this post I'll introduce three of those metrics and some early, untested ideas for influencing them.</p>
+<p>Two caveats up front. First, these ideas are in their infancy. I haven't validated them yet, but I plan to soon. Second, everything here comes from analyzing one attack system &mdash; my own. Admittedly, coming up with defenses against my own offensive agents risks overfitting to my tooling rather than to autonomous attackers in general, so treat these as hypotheses and starting points for your own measurements, not as a tried and true framework.</p>
 <p><em>These attack agents are tightly guardrailed and closely monitored. I plan to share more about the system in another post.</em></p>
 <figure>
   <img alt="Combating Autonomous Attacks" src="2026-08-17-sparring-with-agents-defending-against-autonomous-attacks.header.png" />
