@@ -70,16 +70,16 @@ More commands to reach an objective drives up both Time to Success and Total Cos
 
 Here are a few potential ways to accomplish this:
 
-- Increase your filesystem footprint. Creating a larger folder structure hierarchy with nested subfolders and file references can cause the agent to traverse more directories and filepaths.
-- Obfuscate file paths. Similar to confusing the agent, this can impact agents' abilities to use file paths to reason about context and attack paths.
+- **Increase your filesystem footprint.** Creating a larger folder structure hierarchy with nested subfolders and file references can cause the agent to traverse more directories and filepaths.
+- **Obfuscate file paths.** Similar to confusing the agent, this can impact agents' abilities to use file paths to reason about context and attack paths. To keep things simple for engineers, a local git-ignored legend could guide local coding agents when developing, or a last-minute obfuscation system could apply the changes during deployment (like JS minification).
 
 ### Total Cost
 
 Today's best performing models are paid frontier models. Open-weight alternatives are close behind, but frontier models still excel at the long-horizon, multi-step reasoning that autonomous attacks benefit from. The idea here is, if you can force an attacker onto the most expensive models, you raise the cost of the attack.
 
-Take this with a grain of salt though. A fully-autonomous attack can easily cost under $10, which really isn't a blocker to any serious attacker. But if an attacker is scaling their agents across hundreds or thousands of systems, that could rack up a bill. Honestly though, with the open-weight gap narrowing, and assuming most attackers can spare a few dollars, this probably isn't a great goal. More of a thought.
+Take this with a grain of salt though. A fully-autonomous attack can easily cost under $10, which isn't really a blocker to any serious attacker. But if an attacker is scaling their agents across hundreds or thousands of systems, that could rack up a bill. Honestly though, with the open-weight gap narrowing, and assuming most attackers can spare a few dollars, this probably isn't a great goal. More of a thought.
 
-One area where increasing Total Cost may be worthwhile is if the cost increase also increases detectable telemetry. If you want to increase token consumption (potentially directly correlated to price), then the same tactics as before can work: host numerous or large files and inject distractions into READMEs and files that may confuse or inflate the agent's reasoning. However, these may also pollute the production environment.
+One area where increasing Total Cost may be worthwhile is if the cost increase also increases detectable telemetry. If you want to increase token consumption (where directly correlated to price), then the same tactics as before can work: host numerous or large files and inject distractions into READMEs and files that may confuse or inflate the agent's reasoning. However, these may also pollute the production environment.
 
 ## Moving the Numbers
 
@@ -91,7 +91,7 @@ These ideas are still fresh, so empirical testing is necessary to evaluate their
 
 ## Takeaways
 
-Ultimately, reframing how we consider defending against an aggressive reasoning machine can help us come up with new countermeasures. Can we slow it down? Can we confuse or distract it? Can we deter the operator by increasing time or price of attacks? Even if we're unable to accomplish these goals, we may be able to force additional detectable telemetry from attackers, and that improves our ability to detect and respond. Again, these ideas and metrics presented are just initial thoughts, and still need testing.
+Ultimately, reframing how we consider defending against an aggressive reasoning machine can help us come up with new countermeasures. _Can we slow it down? Can we confuse or distract it? Can we deter the operator by increasing time or price of attacks?_ Even if we're unable to accomplish these goals, we may be able to force additional detectable telemetry from attackers, and that improves our ability to detect and respond. Again, these ideas and metrics presented are just initial thoughts, and still need testing.
 
 ## Closing & Next Steps
 
