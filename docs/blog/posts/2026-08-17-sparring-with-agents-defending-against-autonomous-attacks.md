@@ -16,7 +16,9 @@ tags:
 
 # Sparring with Agents: Defending Against Autonomous Attacks
 
-I recently built an autonomous attack system and deployed it against several live production systems. After successfully reaching post-exploitation impact, I considered what would have stopped it, and I came up with several metrics that organizations can track to measure and improve their defensibility specifically against autonomous attackers. In this post, I'll introduce three metrics and several ways to influence them.
+I recently built an autonomous attack system and deployed it against several live production systems. After successfully reaching post-exploitation impact, I asked myself what would have stopped it, and I came up with several potential metrics that organizations might track to measure and improve their defensibility specifically against autonomous attackers. In this post I'll introduce three of those metrics and some early, untested ideas for influencing them.
+
+Two caveats up front. First, these ideas are in their infancy. I haven't validated them yet, but I plan to soon. Second, everything here comes from analyzing one attack system &mdash; my own. Admittedly, coming up with defenses against my own offensive agents risks overfitting to my tooling rather than to autonomous attackers in general, so treat these as hypotheses and starting points for your own measurements, not as a tried and true framework.
 
 _These attack agents are tightly guardrailed and closely monitored. I plan to share more about the system in another post._
 
@@ -26,42 +28,45 @@ _These attack agents are tightly guardrailed and closely monitored. I plan to sh
 
 <!-- more -->
 
-WIP...
-
-<!--
 ## What Sets Autonomous Attacks Apart
 
-Modern AI agents can operate at a speed and scale humans can't match. This makes them particularly dangerous in cyber attacks because they can find and exploit weaknesses faster than humanly possible. It's helpful to set aside our traditional security mindset and instead consider how AI agents actually reason and act during an attack.
+Modern AI agents can operate at a speed and scale humans can't match. That makes them particularly dangerous in cyber attacks because they can find and chain weaknesses faster than a human operator. It's helpful to set aside some of the traditional security mindset and instead think about how an agent actually reasons and acts during an attack. As we'll see, some defenses that work well against human attackers don't translate well to machine-speed ones.
 
 ## What Would Have Made Attacking Harder
 
-After each significant step forward in my red team operations, I ask myself _what would have stopped me or made this harder?_ The answer to this is often what I present as security recommendations during my readouts. After evaluating my own autonomous attacks, I came up with several concepts that would have made my autonomous attacks harder:
+After each meaningful step forward in a red team operation, I ask myself _what would have stopped me, or made this harder?_ The answer often becomes a recommendation during my readouts. _Side note: this post-mortem evaluation can be helpful, but it ommits analysis of the attacks paths I didn't take._
+
+Evaluating my own autonomous attacks, three themes kept coming up that I think would have made my attacks more difficult:
 
 - Slowing my agents down
 - Confusing my agents
 - Increasing the cost of my agents
 
-Translating these into organizational metrics that can guide and track improvements in defensibility, I came up with these three metrics:
+Translating these into things an organization could actually measure, I came up with these three metrics:
 
-- **Time to Success** — time between first action and completion of objective
-- **Total Commands** — number of actions or commands the agent executed
-- **Total Cost** — tokens consumed (or dollars spent) by the agent
+- **Time to Success** &mdash; time between first action and completion of objective
+- **Total Commands** &mdash; number of actions or commands the agent executed
+- **Total Cost** &mdash; tokens consumed (or dollars spent) by the agent
 
-Each are closely correlated, but can also be independent of each other. I'll expand on each below.
+These are closely correlated &mdash; they mostly revolve around how many steps the agent takes, just measured in time, count, and dollars. Generally, more steps usually means more time and tokens.
+
+However, they can also be independent of each other. Parallelized agents can execute quicker (high Total Commands, low Time to Success). An agent doing deep multi-step reasoning can burn tokens without issuing many commands (high Total Cost, low Total Commands). This is why I break them out &mdash; for detailed separation. But they do often move together.
 
 ### Time to Success
 
-Defenders want this number as high as possible. Every extra second the attack takes is extra time to detect and respond before the objective is reached.
+The initial thought here is standard blue team doctrine. The longer an attack takes, the more time defenders have to detect and respond. But that paradigm was built for human attackers &mdash; it breaks under the pressure of autonomous attacks.
 
-I'm still working on testing these theories, but here are several ways we may be able to slow down autonomous attacks:
+If your detection and response is still running at human speed, taking 30 minutes to a couple hours, then slowing an attack from 5 minutes to 20 minutes doesn't do a whole lot &mdash; the attack is still over before you've responded. So increasing Time to Success is only useful as a defensive metric if the delay enables detection and response processes to trigger and play out. In other words, if you can get the attacking agent to generate more detectable telemetry, and then slow it down long enough for incident response, then that's a win.
 
-- Confuse the agent with misleading or complex content. Think of this as a form of social engineering against the agent to slow it down. This could be accomplished via indirect prompt injections, such as planting files to misdirect the agent or cause misinterpretation of the system architecture.
-- Overload the agent's context window with large datasets. Hosting numerous, or large text files could cause agents to stray from their original system prompt (prompt drift). If the agent's system uses context compaction, this can also cause it to lose track of earlier findings or state, forcing it to re-discover or re-verify things it already knew, burning time and tokens.
-- Plant invalid or canary tokens to cause the agents to waste time and resources. As the agent attempts to validate fake credentials, it can get bogged down in network calls, generate more telemetry, increase its token counts, and trigger canary detections.
+With that in mind, here are some ways we may be able to slow down autonomous attacks, and ideally make them noiser while we're at it:
+
+- **Confuse the agent with misleading or complex content.** Think of this as a form of social engineering against the agent via indirect prompt injections. Planting files that misdirect it or misrepresent the system architecture can send it down dead ends. A capable agent will recover, so treat this as a speed bump, not a wall.
+- **Overload the agent's context with large or numerous files.** This can induce prompt drift or, if the system compacts context, cause it to lose earlier findings and have to re-discover them, burning time and tokens to do so. There are ways around this, such as using `grep` and `find` to conduct targeted searches instead of ingesting whole files, but this may still prove useful against less-mature agents.
+- **Plant canary tokens and invalid credentials.** While using canary tokens should trip detections immediately, attempting to validate fake credentials generates more network calls and telemetry. At this point, you may as well make all the invalid tokens canaries though. In either case, the waste of attacker time is a benefit, but the alert is the real point.
 
 ### Total Commands
 
-Increasing the total commands required to reach an objective also drives up Time to Success and Total Cost, since more steps generally means more time and tokens. But an increase in total commands also means an increase in telemetry. Every command is a chance for something to log, alert, or leave a trace. 200 steps instead of 20 to reach the same objective means 10x more opportunities for a detection to fire.
+More commands to reach an objective drives up both Time to Success and Total Cost, since more steps generally means more time and tokens. But an increase in total commands also means an increase in telemetry. Every command is a chance for something to log, alert, or leave a trace. 200 steps instead of 20 to reach the same objective means 10x more opportunities for a detection to fire.
 
 Here are a few potential ways to accomplish this:
 
@@ -70,28 +75,24 @@ Here are a few potential ways to accomplish this:
 
 ### Total Cost
 
-Currently, the best performing models are paid frontier models. Although free, open-weight alternatives are close behind, frontier models excel at long-horizon, multi-step reasoning that autonomous attacks require. If defenders can prepare their environment sufficiently so that attackers must pay for the most-powerful models, they can increase the cost of attacks and thereby decrease the pool size of potential attackers. Instead of "any attacker with a laptop", it'd be narrowed down to attackers who can fund their efforts.
+Today's best performing models are paid frontier models. Open-weight alternatives are close behind, but frontier models still excel at the long-horizon, multi-step reasoning that autonomous attacks benefit from. The idea here is, if you can force an attacker onto the most expensive models, you raise the cost of the attack.
 
-Assuming the adversary uses a paid model, some ways to increase token consumption include:
+Take this with a grain of salt though. A fully-autonomous attack can easily cost under $10, which really isn't a blocker to any serious attacker. But if an attacker is scaling their agents across hundreds or thousands of systems, that could rack up a bill. Honestly though, with the open-weight gap narrowing, and assuming most attackers can spare a few dollars, this probably isn't a great goal. More of a thought.
 
-- Host numerous, or large files to consume tokens.
-- Inject distracting, but plausible data into READMEs or files to inflate agent reasoning.
+One area where increasing Total Cost may be worthwhile is if the cost increase also increases detectable telemetry. If you want to increase token consumption (potentially directly correlated to price), then the same tactics as before can work: host numerous or large files and inject distractions into READMEs and files that may confuse or inflate the agent's reasoning. However, these may also pollute the production environment.
 
 ## Moving the Numbers
 
-After establishing baseline measurements and giving teams time to implement recommendations, we can repeat the same autonomous attacks with the click of a button and see the difference in outcomes. These two result sets are highly valuable to red teams and security organizations, as they literally detail and measure improvements to security &mdash; or lack thereof.
+After establishing baselines and giving teams time to implement changes, we can re-run the same attacks and compare. These before/after result sets are the real payoff, as they're concrete, repeatable measurements of whether defensive changes have actually helped.
 
-The ideas laid out in this blog are still in their infancy, so empirical testing is necessary to evaluate their effectiveness. Furthermore, additional consideration is needed regarding the potential impact of these countermeasures on legitimate workflows. The practical implementation of these examples may not be feasible in real-world scenarios. For instance, confusing file paths and misleading READMEs could just as easily degrade onboarding or other processes as it could attacking agents.
+Remember though that LLM agents are non-deterministic. Re-running "the same attacks" again is not a clean A/B test, and variance between re-runs could muddy the metrics. You may be able to avoid this by collecting averages from multiple tests before and after improvements.
+
+These ideas are still fresh, so empirical testing is necessary to evaluate their effectiveness. Additionally, further consideration is needed regarding the potential impact these countermeasures may have on legitimate workflows. Confusing file paths and misleading READMEs can lose a legitimate user just as easily as an attacking agent. Several of these tactics may not be worth it in a real environment, and some may not be feasible at all. And remember, these are just speed bumps &mdash; agents can adapt and learn to bypass these.
 
 ## Takeaways
 
-- Increasing Time to Success gives defenders more time to detect and respond.
-- Increasing Total Commands required for the agent to reach its objectives means more telemetry and more chances to catch it.
-- Increasing Total Cost decreases the pool size of potential adversaries to only those who can afford it.
-
-Moving any of these three metrics upward is a measurable defensive improvement worth celebrating.
+Ultimately, reframing how we consider defending against an aggressive reasoning machine can help us come up with new countermeasures. Can we slow it down? Can we confuse or distract it? Can we deter the operator by increasing time or price of attacks? Even if we're unable to accomplish these goals, we may be able to force additional detectable telemetry from attackers, and that improves our ability to detect and respond. Again, these ideas and metrics presented are just initial thoughts, and still need testing.
 
 ## Closing & Next Steps
 
-Conducting adversarial tests and obtaining measurements of current defenses is only the first part of the equation. Ultimately, those measurements should be used to inform and influence positive security change. Next, I plan to test these theories to identify which measures actually make it harder for autonomous attacks to succeed. Every round of sparring &mdash; testing, measuring, adjusting &mdash; should leave the defense a little better than last time.
- -->
+Adversarial testing and baseline measurements are only the first half of the equation. The point is to turn those measurements into real security change. Next, I plan to test these theories to find out which of these tactics actually slow, confuse, or cost an autonomous attacker. Every round of sparring &mdash; testing, measuring, adjusting &mdash; should leave the defense a little better than last time.
