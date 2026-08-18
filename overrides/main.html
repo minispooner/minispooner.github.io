@@ -1,4 +1,4 @@
-{% extends "main.html" %}
+{% extends "base.html" %}
 
 {% block extrahead %}
   {{ super() }}
@@ -11,7 +11,7 @@
   {% set description = page.meta.description if page.meta and page.meta.description else config.site_description %}
   {% set og_title = page.meta["og:title"] if page.meta and page.meta["og:title"] else title %}
   {% set og_description = page.meta["og:description"] if page.meta and page.meta["og:description"] else description %}
-  {% set image = page.meta["og:image"] %}
+  {% set image = page.meta["og:image"] if page.meta and page.meta["og:image"] else (config.site_url ~ "me.jpg") %}
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ og_title }}">
   <meta property="og:description" content="{{ og_description }}">

@@ -1,5 +1,6 @@
 ---
 date: 2023-11-16
+og:image: "https://tyanderson.red/blog/2023-11-16-mixed-l33t-rules-generator.header.png"
 categories:
   - Tools
   - Offensive Security

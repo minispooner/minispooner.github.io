@@ -1,5 +1,6 @@
 ---
 date: 2026-04-20
+og:image: "https://tyanderson.red/blog/2026-04-20-autonomous-red-vs-blue-labs.header.png"
 categories:
   - AI Agents
   - Red Teaming

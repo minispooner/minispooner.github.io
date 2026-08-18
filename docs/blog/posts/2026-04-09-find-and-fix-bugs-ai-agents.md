@@ -1,5 +1,6 @@
 ---
 date: 2026-04-09
+og:image: "https://tyanderson.red/blog/2026-04-09-find-and-fix-bugs-ai-agents.header.png"
 categories:
   - AI Agents
   - Security

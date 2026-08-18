@@ -1,5 +1,6 @@
 ---
 date: 2022-06-04
+og:image: "https://tyanderson.red/blog/2022-06-04-breaking-into-red-teaming.header.jpg"
 categories:
   - Red Teaming
   - Career

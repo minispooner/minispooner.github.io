@@ -1,5 +1,6 @@
 ---
 date: 2025-08-14
+og:image: "https://tyanderson.red/blog/2025-08-14-transitioning-from-offsec-to-red-teaming.header.jpg"
 categories:
   - Red Teaming
   - Career

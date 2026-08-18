@@ -1,5 +1,6 @@
 ---
 date: 2025-01-21
+og:image: "https://tyanderson.red/blog/2025-01-21-preparing-for-a-career-in-offensive-security.header.png"
 categories:
   - Career
   - Offensive Security

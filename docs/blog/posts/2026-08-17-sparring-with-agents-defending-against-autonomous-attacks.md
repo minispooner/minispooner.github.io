@@ -1,5 +1,6 @@
 ---
 date: 2026-08-17
+og:image: "https://tyanderson.red/blog/2026-08-17-sparring-with-agents-defending-against-autonomous-attacks.header.png"
 categories:
   - AI Agents
   - Red Teaming

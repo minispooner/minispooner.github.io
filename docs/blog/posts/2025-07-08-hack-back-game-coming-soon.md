@@ -1,5 +1,6 @@
 ---
 date: 2025-07-08
+og:image: "https://tyanderson.red/blog/2025-07-08-hack-back-game-coming-soon.header.png"
 categories:
   - Hack Back
 tags:
