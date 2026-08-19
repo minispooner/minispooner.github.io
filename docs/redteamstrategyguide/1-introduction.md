@@ -73,4 +73,6 @@ Without a clear purpose, a red team's efforts become a scattered, shotgun spray,
 
 That's why the rest of this guide follows a typical operational sequence of a red team, starting with purpose. [2. The Purpose of Internal Red Teams](2-purpose.md) comes first because it clarifies what counts as impact for your red team. From there, [3. Marketing & Promoting Red Team Services](3-marketing.md) and [4. Scoping & Planning Operations](4-scoping.md) determine what work gets done and why. [5. Operating Intentionally](5-operating.md) governs how it gets executed, and [6. Reporting & Influencing Change](6-reporting.md) and [7. Measuring Success](7-measuring.md) close the loop by translating results into influence and proving whether that influence actually moved the needle. Each section adds specific benefits to the overall impact of red team deliverables, and we'll explore each throughout the guide.
 
+---
+
 [Next: 2. The Purpose of Internal Red Teams →](2-purpose.md){ .md-button }
