@@ -1,14 +1,14 @@
 # 1. Introduction
 
-_Why I wrote the Red Team Strategy Guide (RTSG) and what "impact" really means._
+_What the Red Team Strategy Guide (RTSG) does for red teams, and what "impact" really means._
 
 <p class="rtsg-meta">📅 Published July 7, 2026 &nbsp;·&nbsp; 🕒 {{READTIME}} min read</p>
 
 <!-- prettier-ignore -->
 !!! tip "Takeaways"
-    - RTSG focuses on maximizing business impact from red team operations (i.e. influencing security improvements)
-    - RTSG offers tips and advice on how to run a red team program effectively, as opposed to detailing how to technically execute red team operations
-    - RTSG is built on 16+ years of security experience, ~5 years of it red teaming
+    - RTSG focuses on maximizing business impact from red team operations (i.e. influencing security improvements).
+    - RTSG offers tips and advice on how to run a red team program effectively, as opposed to detailing how to technically execute red team operations.
+    - RTSG is built on 16+ years of security experience, ~5 years of it red teaming.
 
 ---
 
