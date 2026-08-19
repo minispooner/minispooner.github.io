@@ -874,6 +874,8 @@
 
 <h1 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h1>
 <p><em>Why I wrote the Red Team Strategy Guide (RTSG) and what "impact" really means.</em></p>
+<p class="rtsg-meta">📅 Published July 7, 2026 &nbsp;·&nbsp; 🕒 8 min read</p>
+
 <!-- prettier-ignore -->
 <div class="admonition tip">
 <p class="admonition-title">Takeaways</p>
@@ -885,8 +887,8 @@
 </div>
 <hr />
 <h2 id="why-im-writing-the-rtsg">Why I'm Writing the RTSG<a class="headerlink" href="#why-im-writing-the-rtsg" title="Permanent link">&para;</a></h2>
-<p>Red teaming in large organizations is ambiguous work. Unlike an engineering team shipping features or closing tickets, a red team's output is a set of findings and recommendations. Some argue that the success of a red team ultimately depends on whether other teams act on our findings, while others claim that our value lies in the unbiased delivery of adversarial perspective, regardless of how the receiving end takes it. They're both right, and both are worth pursuing, but knowing when to lean on each matters &mdash; more on this in <a href="../2-purpose/">2. The Purpose of Internal Red Teams</a>. Without a deep understanding of our red team purpose and how we fit into the overall strategy of a large security organization, it's easy to mistake activity (operations run, reports written, vulnerabilities found) for actual outcomes.</p>
-<p>Over my 16+ years of security experience, I've been exposed to thousands of statements, blogs, presentations, and pitches about security work and projects. They often talk about what was built or found, but with little mention of the resulting impact. This focus on technical detail and the "what we did" is understandably more common in less-experienced Individual Contributors (ICs), as it typically coincides with their role expectations &mdash; they're usually the doers. The pattern isn't limited to early-career ICs, though; I've seen plenty of mid-career and even senior leaders struggle with the concept of impact as well.</p>
+<p>Red teaming in large organizations is ambiguous work. Unlike an engineering team shipping features or closing tickets, a red team's output is a set of findings and recommendations. Some argue that the success of a red team ultimately depends on whether other teams act on our findings, while others claim that our value lies in the unbiased delivery of adversarial perspective, regardless of how the receiving end takes it. They're both right, to an extent, but knowing when to lean on each matters &mdash; more on this in <a href="../2-purpose/">2. The Purpose of Internal Red Teams</a>. Without a deep understanding of our red team purpose and how we fit into the overall strategy of a large security organization, it's easy to mistake activity (operations run, reports written, vulnerabilities found) for actual outcomes.</p>
+<p>I've sat through thousands of statements, blogs, presentations, and pitches about security work and projects. They often talk about what was built or a cool hack, but with little mention of the resulting impact. This focus on technical detail and the "what we did" is understandably more common in less-experienced Individual Contributors (ICs), as it typically coincides with their role expectations &mdash; they're usually the doers. The pattern isn't limited to early-career ICs, though; I've seen plenty of mid-career and even senior leaders struggle with the concept of impact as well.</p>
 <p>Over the last five years of red teaming, I've identified several key areas that have consistently helped me lead successful red team operations. In this guide, I distill my experience and lessons learned into several sections to help other red teams and security teams maximize their business impact. Because individual circumstances and needs vary, rather than trying to precisely replicate my actions or stories, I'd encourage you to adapt the principles and processes to fit your unique needs. The bulk of this guide is written for red teams, but many of the concepts apply to other security functions as well, since we all typically share the same overarching objectives of maintaining and improving security &mdash; we just do it in different ways.</p>
 <h2 id="defining-impact">Defining Impact<a class="headerlink" href="#defining-impact" title="Permanent link">&para;</a></h2>
 <p>There are lots of different reasons why companies implement various security functions. Each function should have a purpose, and their various security initiatives should deliver value in unique ways, such as achieving compliance, enabling sales, or hunting adversaries. These outcomes can all be impactful, so long as they align with the security function's purpose and goals.</p>
@@ -899,9 +901,9 @@
 <h3 id="technical-impact-vs-business-impact">Technical Impact vs Business Impact<a class="headerlink" href="#technical-impact-vs-business-impact" title="Permanent link">&para;</a></h3>
 <p>It's important to make a clear distinction between "technical impact" and "business impact". Unfortunately, I often see security folks fixated on the technical results of their work and not the actual impact of it. Below are a few examples of how a team may attempt to classify their technical output as impactful. In certain scenarios, these results may indeed align with strategic objectives, but for our examples, we'll weigh the technical results vs. outcomes from a different perspective.</p>
 <ul>
-<li>In a recent penetration test, we compromised the administrative console and obtained read access to all customer directories.</li>
-<li>Last quarter, we integrated 20 new secret detection signatures, increasing our coverage by 50%, and total detections by 5%.</li>
-<li>During our last incident, we used AI agents to analyze 100+ data sources to assist us in our investigation, saving 4 hours of human work, landing us 10% under the Average Time to Close for our incident.</li>
+<li><em>In a recent penetration test, we compromised the administrative console and obtained read access to all customer directories.</em></li>
+<li><em>Last quarter, we integrated 20 new secret detection signatures, increasing our coverage by 50%, and total detections by 5%.</em></li>
+<li><em>During our last incident, we used AI agents to analyze 100+ data sources to assist us in our investigation, saving 4 hours of human work, landing us 10% under the Average Time to Close for our incident.</em></li>
 </ul>
 <p>While these "wins" may appear impressive, additional context could severely erode much of the perceived success:</p>
 <ul>
@@ -918,7 +920,12 @@
 </ul>
 <p>In the last examples provided, the actions and reports move away from shiny technical output metrics and draw closer to how the results actually improved security. I also made a point to showcase the scale of the effects of the projects, something we'll revisit when discussing how to scale outcomes at the end of an operation in <a href="../5-operating/">5. Operating Intentionally</a>.</p>
 <h2 id="whats-ahead">What's Ahead<a class="headerlink" href="#whats-ahead" title="Permanent link">&para;</a></h2>
-<p>I love to quote the Cheshire Cat, from Lewis Carroll's <em>Alice's Adventures in Wonderland</em>. When Alice asks which way to go, the cat responds, "That depends a good deal on where you want to get to." Without a clear purpose, a red team's efforts become a scattered, shotgun spray, relying on hope that something lands. However, when we do understand our purpose and where we want to be, we can target specific outcomes with the precision of a sniper.</p>
+<p>I love this exchange from Lewis Carroll's Alice in Wonderland. When Alice is at a fork in the road and asks which way to go, the cat turns the question back on her:</p>
+<blockquote class="pull-quote">
+<p>"That depends a good deal on where you want to get to."
+<cite>&mdash; The Cheshire Cat</cite></p>
+</blockquote>
+<p>Without a clear purpose, a red team's efforts become a scattered, shotgun spray, relying on hope that something lands. However, when we do understand our purpose and where we want to be, we can target specific outcomes with the precision of a sniper.</p>
 <p>That's why the rest of this guide follows a typical operational sequence of a red team, starting with purpose. <a href="../2-purpose/">2. The Purpose of Internal Red Teams</a> comes first because it clarifies what counts as impact for your red team. From there, <a href="../3-marketing/">3. Marketing &amp; Promoting Red Team Services</a> and <a href="../4-scoping/">4. Scoping &amp; Planning Operations</a> determine what work gets done and why. <a href="../5-operating/">5. Operating Intentionally</a> governs how it gets executed, and <a href="../6-reporting/">6. Reporting &amp; Influencing Change</a> and <a href="../7-measuring/">7. Measuring Success</a> close the loop by translating results into influence and proving whether that influence actually moved the needle. Each section adds specific benefits to the overall impact of red team deliverables, and we'll explore each throughout the guide.</p>
 <p><a class="md-button" href="../2-purpose/">Next: 2. The Purpose of Internal Red Teams →</a></p>
 
