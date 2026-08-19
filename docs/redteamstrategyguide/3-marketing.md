@@ -1,6 +1,6 @@
 # 3. Marketing & Promoting Red Team Services
 
-Coming soon...
+Coming soon, estimated Oct 2026...
 
 ---
 

@@ -32,6 +32,9 @@ theme:
     logo: material/shield-lock
   favicon: assets/favicon.svg
 
+hooks:
+  - hooks.py
+
 plugins:
   - search
   - meta
