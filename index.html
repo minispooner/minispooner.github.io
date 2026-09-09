@@ -244,7 +244,7 @@
     .md-sidebar--primary { display: none }
   }
 </style>
-
+<main class="portfolio-home">
 <section class="hero-section">
   <div class="md-grid md-typeset">
     <div class="hero-content">
@@ -252,50 +252,150 @@
         <img src="../me.jpg" alt="Ty Anderson" class="hero-photo" />
       </div>
       <div class="hero-text">
-        <h1>Hi, I'm <span class="hero-name">Ty Anderson</span></h1>
-        <p class="hero-tagline">
-          Staff Red Team Engineer @Adobe.
-          <br />
-          <span id="years-experience"></span>+ years making and breaking systems.
-          <script>document.getElementById("years-experience").textContent = new Date().getFullYear() - 2010;</script>
-          <br />
-          <span class="hero-disclaimer">Views are my own.</span>
+        <p class="hero-eyebrow">Ty Anderson <span>/</span> Staff Red Team Engineer</p>
+        <p class="section-heading">I build and evaluate offensive AI & autonomous agents</p>
+        <p class="hero-summary">
+          11 years offensive security &middot; 3 years applying AI to security
         </p>
-        <!-- <div class="hero-actions">
-          <a href="blog/" class="md-button md-button--primary">Read the Blog</a>
-          <a href="redteamstrategyguide/" class="md-button">Read the Book</a>
-          <a href="hackback/" class="md-button">Play the Game</a>
-        </div> -->
+        <p class="hero-disclaimer">Views are my own.</p>
+        <div class="hero-actions">
+          <a href="#ai-security-research" class="md-button md-button--primary">AI Security Research</a>
+          <a href="/redteamstrategyguide" class="md-button md-button">Red Team Strategy Guide</a>
+          <a href="https://www.linkedin.com/in/ty-anderson-redteamer/" target="_blank" rel="noopener" class="md-button">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="evidence-rail">
+      <a class="evidence-item" href="blog/2026/09/08/engineering-and-evaluating-an-autonomous-agent-for-post-exploitation/">
+        <strong>5/5</strong>
+        <span>scoped post-exploitation agent runs succeeded &mdash; 3.8-minute, $0.50 average</span>
+      </a>
+      <a class="evidence-item" href="blog/2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">
+        <strong>43% &rarr; 100%</strong>
+        <span>logging coverage &mdash; red vs blue agents</span>
+      </a>
+      <a class="evidence-item" href="blog/2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">
+        <strong>&lt;$5</strong>
+        <span>complete attack, detection, hardening, and retest pipeline</span>
+      </a>
+    </div>
+    <p class="evidence-note">Results from controlled lab evaluations, not production incidents — see linked write-ups for full methodology.</p>
+
+  </div>
+</section>
+
+<section class="work-section" id="ai-security-research">
+  <div class="md-grid md-typeset">
+    <p class="work-kicker">AI Security Research</p>
+    <p class="section-heading">Measuring agentic security</p>
+    <p class="section-text">I build production agentic offensive security systems, then evaluate them against realistic objectives in realistic environments.</p>
+    <div class="work-grid">
+
+      <div class="work-card work-card--featured">
+        <a class="work-image-link" href="blog/2026/09/08/engineering-and-evaluating-an-autonomous-agent-for-post-exploitation/">
+          <img src="blog/2026-09-08-engineering-and-evaluating-an-autonomous-agent-for-post-exploitation.header.png" alt="" loading="lazy" />
+        </a>
+        <div class="work-card-body">
+          <p class="work-kicker">Sep 2026</p>
+          <h3><a href="blog/2026/09/08/engineering-and-evaluating-an-autonomous-agent-for-post-exploitation/">Engineering and Evaluating an Autonomous Agent for Post-Exploitation</a></h3>
+          <p>Built a multi-agent C2 harness, defined an impact-based success criterion, and evaluated how models, prompts, tools, orchestration, and safeguards affected reliability.</p>
+          <ul class="outcome-list" aria-label="Project outcomes">
+            <li>5/5 scoped trials succeeded</li>
+            <li>3/8 broad-objective trials succeeded</li>
+            <li>Refusals and tool failures analyzed</li>
+          </ul>
+          <a class="text-link" href="blog/2026/09/08/engineering-and-evaluating-an-autonomous-agent-for-post-exploitation/">Read the evaluation <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <a class="work-image-link" href="blog/2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">
+          <img src="blog/2026-04-20-autonomous-red-vs-blue-labs.header.png" alt="" loading="lazy" />
+        </a>
+        <div class="work-card-body">
+          <span class="work-kicker">Apr 2026</span>
+          <h3><a href="blog/2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">Autonomous Red vs Blue Labs</a></h3>
+          <p>Designed a five-agent pipeline to attack, investigate, improve logging, redeploy, and retest a product without human intervention after launch.</p>
+          <ul class="outcome-list" aria-label="Project outcomes">
+            <li>43% → 100% logging coverage</li>
+            <li>Under $5 in model cost</li>
+          </ul>
+          <a class="text-link" href="blog/2026/04/20/using-autonomous-red-vs-blue-labs-to-improve-products-and-detections/">Read the write-up <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <a class="work-image-link" href="blog/2026/04/09/how-to-find-and-fix-bugs-using-ai-agents/">
+          <img src="blog/2026-04-09-find-and-fix-bugs-ai-agents.header.png" alt="" loading="lazy" />
+        </a>
+        <div class="work-card-body">
+          <span class="work-kicker">Apr 2026</span>
+          <h3><a href="blog/2026/04/09/how-to-find-and-fix-bugs-using-ai-agents/">Finding and Fixing Credential Chains with Agents</a></h3>
+          <p>Built an agent workflow that reasons across credential chains, shields live secrets from model context, and prioritizes remediation by blast-radius reduction.</p>
+          <ul class="outcome-list" aria-label="Project outcomes">
+            <li>Secrets withheld from the model</li>
+            <li>Attack-path-aware prioritization</li>
+          </ul>
+          <a class="text-link" href="blog/2026/04/09/how-to-find-and-fix-bugs-using-ai-agents/">Read the write-up <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="intersection-section">
+  <div class="md-grid md-typeset">
+    <p class="work-kicker">My passion</p>
+    <p class="section-heading">Real offensive security work, augmented with AI</p>
+    <p class="section-text">My work sits at the intersection of red teaming, offensive security and autonomous AI systems. I build agents that perform real offensive security workflows, evaluate their capabilities and failures, and use what I learn to improve how organizations defend against increasingly autonomous attackers.</p>
+    <p class="intersection-subheading">My current interests include:</p>
+    <ul class="interests-list">
+      <li>Autonomous offensive agents</li>
+      <li>Cybersecurity model evaluations</li>
+      <li>Agent orchestration and harnesses</li>
+      <li>Post-exploitation reasoning</li>
+      <li>Measuring attacker capability and real-world impact</li>
+      <li>Defending systems against autonomous attacks</li>
+    </ul>
+  </div>
+</section>
+
+<section class="more-section">
+  <div class="md-grid md-typeset">
+    <div class="more-layout">
+      <div class="section-heading section-heading--compact">
+        <p class="section-kicker">Additional security work</p>
+        <p class="section-heading">Contributing to the industry</p>
+      </div>
+      <div class="more-links">
+        <a href="redteamstrategyguide/" class="more-link">
+          <span>
+            <strong>Red Team Strategy Guide</strong>
+            <small>Operating, measuring, and communicating red team impact at enterprise scale.</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="hackback/" class="more-link">
+          <span>
+            <strong>Hack Back</strong>
+            <small>A strategy game that teaches offensive and defensive security concepts.</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="blog/" class="more-link">
+          <span>
+            <strong>Research and writing</strong>
+            <small>AI agents, offensive security, red team strategy, and career development.</small>
+          </span>
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
-
-<section class="about-section">
-  <div class="md-grid md-typeset">
-    <div class="about-grid">
-
-      <a class="about-card" href="blog/">
-        <span class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg></span>
-        <h3>Blog</h3>
-        <p>My posts on AI-fueled offensive security, red team strategy, security research, and career growth.</p>
-      </a>
-
-      <a class="about-card" href="redteamstrategyguide/">
-        <span class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m6.91 5.5 2.3 2.29-1.42 1.42-2.29-2.3-2.29 2.3-1.42-1.42 2.3-2.29-2.3-2.29 1.42-1.42 2.29 2.3 2.29-2.3 1.42 1.42m13 13-1.42-1.42-2.29 2.3-2.29-2.3-1.42 1.42 2.3 2.29-2.3 2.29 1.42 1.42 2.29-2.3 2.29 2.3 1.42-1.42-2.3-2.29m.49-11.67L17.18 11 15.6 9.73l1.17-1.5a9.08 9.08 0 0 0-6.66 5.62A4.5 4.5 0 1 1 7.5 13a4 4 0 0 1 .78.08 11.27 11.27 0 0 1 8.15-6.82L15 5.18l1.27-1.58M10 17.5A2.5 2.5 0 1 0 7.5 20a2.5 2.5 0 0 0 2.5-2.5"/></svg></span>
-        <h3>Red Team Strategy Guide</h3>
-        <p>My practical guide on how to thoughtfully approach red teaming within large organizations to maximize business impact</p>
-      </a>
-
-      <a class="about-card" href="hackback/">
-        <span class="about-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 6h10a6 6 0 0 1 6 6 6 6 0 0 1-6 6c-1.78 0-3.37-.77-4.47-2h-1.06c-1.1 1.23-2.69 2-4.47 2a6 6 0 0 1-6-6 6 6 0 0 1 6-6M6 9v2H4v2h2v2h2v-2h2v-2H8V9zm9.5 3a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5m3-3a1.5 1.5 0 0 0-1.5 1.5 1.5 1.5 0 0 0 1.5 1.5 1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 18.5 9"/></svg></span>
-        <h3>Hack Back Game</h3>
-        <p>My real-time strategy game where you control hackers to infiltrate networks, deploy malware, and outsmart MegaCorp — teaching real offensive and defensive cybersecurity concepts through engaging gameplay.</p>
-      </a>
-
-    </div>
-  </div>
-</section>
+</main>
 
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
