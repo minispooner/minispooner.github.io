@@ -11,6 +11,10 @@
   scroll-margin-top: 2rem;
 }
 
+.portfolio-home .md-grid {
+  padding: 0 1.5rem;
+}
+
 .hero-section {
   padding: 2.5rem 0;
   /* background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, #1a0000 100%); */
@@ -474,4 +478,27 @@
   .hero-tagline { font-size: 1rem; }
   .hero-actions { justify-content: center; }
   .more-layout { grid-template-columns: 1fr; gap: 2rem; }
+
+  .evidence-rail { grid-template-columns: 1fr; }
+  .evidence-item {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 0.35rem;
+  }
+  .evidence-item + .evidence-item {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .evidence-item strong { white-space: normal; }
+  .evidence-note { text-align: center; }
+
+  .work-grid { grid-template-columns: 1fr; }
+  .work-card--featured {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+  .work-card--featured .work-image-link {
+    aspect-ratio: 16 / 8.5;
+  }
 }
