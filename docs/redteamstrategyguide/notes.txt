@@ -1,0 +1,44 @@
+<!--
+Notes:
+
+things i'd like to talk about:
+- red team operations sourced from within the team are out of scope for this section. this section focuses on promoting red team services to other internal orgs/teams. this helps increase external requests for red teaming, and builds positive working relationships.
+- Higher demand translates into a larger backlog, which then allows you to select from the most impactful work
+- Get your face out there to promoting red teaming. Educate the org on what red team does, why it exists, how it can help. this builds organizational trust and psychological safety around adversarial testing, resulting in higher quality collaboration and candor and higher willingness to accept recommendations and implement improvements
+- when others understand what you do, they'll want it. Organic demand follows understanding — teams seek you out vs. tolerate you
+- Receptivity to recommendations increases when intent is understood
+- Perception shapes effectiveness — "helpful partner" vs. "security police"
+- Speak at internal conferences, all-hands, and leadership forums
+- Prepare simple, visually engaging presentations that provoke curiosity and interest
+
+Publish Your Wins:
+- Share anonymized findings that demonstrate real impact, or better
+- Celebrate uncovering unknown risk and measurable security improvements
+- Make outcomes tangible: before/after, risk reduced, dollars avoided
+
+Let Your Customers Promote You:
+- Satisfied partners and stakeholders are your most credible advocates
+- Encourage teams you've worked with to share their experience organically
+
+Manage Inbound Demand
+- Track all external requests into a working queue like Jira. Public if it's okay for defenders to be aware and prepare. private if you want a real current measurement.
+- Give the team the ability to track, triage, and prioritize work strategically
+- Treat the queue as a signal of organizational health and demand, to an extent. the balance of internally vs externally originated red team operations will vary by company, but if nobody is ever asking for red teaming, then they probably don't understand it, you don't produce good results, or you're not very fun to work with
+
+
+- before operating or setting operational expectations, it's expected the red team has an established Rules of Engagements and/or leadership buy-in and support
+
+
+
+
+Spreading Awareness, Seeking Collaboration
+- Help potential clients understand what you do and the unique value you provide by sharing about your services and your success stories in larger settings
+- Advertising your services to engineers can attract interested parties to act as trusted insiders and increase collaboration, leading to more red/purple teaming or assumed compromise operations. when they are excited and agreeable before tests beging, they're typically much more accepting of recommendations and willing to make improvements
+- Sharing goals transparently with Blue Team members can open the door to successful collaboration
+
+Find Your Audience
+- Post success stories on internal security forums (Slack channels, security quarterly emails, all-hands)
+- Offer shoulder surfing or delegate some safe, light red team work to interested parties (help with passive recon, etc)
+- Provide readouts to larger parties (appropriately redacted)
+
+-->
