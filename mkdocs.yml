@@ -46,6 +46,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - Resume: resume.md
   - Blog: blog/index.md
   - Hack Back Game: hackback/index.md
   - Red Team Strategy Guide:
