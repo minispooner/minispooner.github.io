@@ -693,6 +693,57 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-09-08 00:00:00+00:00">September 8, 2026</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../ai-agents/" class="md-meta__link">AI Agents</a>, 
+              <a href="../red-teaming/" class="md-meta__link">Red Teaming</a>, 
+              <a href="./" class="md-meta__link">Offensive Security</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              13 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="engineering-and-evaluating-an-autonomous-agent-for-post-exploitation"><a class="toclink" href="../../2026/09/08/engineering-and-evaluating-an-autonomous-agent-for-post-exploitation/">Engineering and Evaluating an Autonomous Agent for Post-Exploitation</a></h2>
+<p>AI agents are increasingly demonstrating impressive vulnerability-discovery capabilities. But what happens after a bug is exploited and the agent gets onto the system?</p>
+<p>For a human red teamer, post-exploitation is often where the interesting work begins. Initial access provides a foothold, but accomplishing a meaningful objective requires much more: understanding the environment, finding useful credentials, deciding which paths are worth pursuing, validating access, enumerating permissions, and determining whether that access leads to objectives or enables meaningful security impact.</p>
+<p>Over the past few years, I've been experimenting with using AI agents to automate portions of offensive security. More recently, I've focused on this post-exploitation problem: <strong>can an AI agent take an initial foothold and independently reason its way toward meaningful impact?</strong></p>
+<p>The short answer from my testing is <strong>yes</strong> &mdash; but reliable performance requires careful engineering.</p>
+<p>When successful, the agent could move from an operator-provided objective to credential discovery and authenticated data access in only a few minutes and for well under a dollar of model inference. The more interesting finding, however, was how heavily that performance depended on the complete agent system: the model, system prompts, tools, orchestration, context, and safeguards.</p>
+<p>The model mattered, but the real unit of evaluation was the complete agent system.</p>
+<figure>
+  <img alt="Engineering and Evaluating an Autonomous Agent for Post-Exploitation" src="../../2026-09-08-engineering-and-evaluating-an-autonomous-agent-for-post-exploitation.header.png" />
+</figure>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2026/09/08/engineering-and-evaluating-an-autonomous-agent-for-post-exploitation/">
+          Continue reading
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-01-21 00:00:00+00:00">January 21, 2025</time></li>
         
           <li class="md-meta__item">
