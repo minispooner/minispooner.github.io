@@ -1,6 +1,6 @@
 # 4. Scoping & Planning Operations
 
-Coming soon...
+Coming soon, estimated Dec 2026...
 
 <!--
 
