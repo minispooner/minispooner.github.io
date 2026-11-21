@@ -74,4 +74,4 @@ To help with speed reading, each section begins with Takeaways that summarize th
 
 ## Contributing
 
-Have something to add? Please read through the [Introduction](1-introduction.md), and if your proposed content aligns with the intent of this guide, then open an [Issue or a Pull Request](https://github.com/minispooner/red-team-strategy-guide){:target="\_blank"}.
+Have something to add? Please [open an issue](https://github.com/minispooner/minispooner.github.io/issues/new){:target="\_blank" rel="noopener"}.

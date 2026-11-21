@@ -75,4 +75,5 @@ That's why the rest of this guide follows a typical operational sequence of a re
 
 ---
 
-[Next: 2. The Purpose of Internal Red Teams →](2-purpose.md){ .md-button }
+[2. The Purpose of Internal Red Teams&nbsp;→](2-purpose.md){ .md-button }
+{ .rtsg-nav }

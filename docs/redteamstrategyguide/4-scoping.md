@@ -21,4 +21,5 @@ A long queue isn't a mandate to execute everything. Compare requests and proacti
 
 ---
 
-[← 3. Marketing & Promoting Red Team Services](3-marketing.md){ .md-button } &nbsp; [5. Operating Intentionally →](5-operating.md){ .md-button }
+[←&nbsp;3. Marketing & Promoting Red Team Services](3-marketing.md){ .md-button } [5. Operating Intentionally&nbsp;→](5-operating.md){ .md-button }
+{ .rtsg-nav }

@@ -104,4 +104,5 @@ Once purpose is defined, it should shape everything downstream &mdash; how you c
 
 ---
 
-[← 1. Introduction](1-introduction.md){ .md-button } &nbsp; [3. Marketing & Promoting Red Team Services →](3-marketing.md){ .md-button }
+[←&nbsp;1. Introduction](1-introduction.md){ .md-button } [3. Marketing & Promoting Red Team Services&nbsp;→](3-marketing.md){ .md-button }
+{ .rtsg-nav }

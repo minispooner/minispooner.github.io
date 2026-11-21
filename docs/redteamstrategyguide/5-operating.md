@@ -14,4 +14,5 @@ When I joined my first red team, I was exploiting things arbitrarily without an 
 
 ---
 
-[← 4. Scoping & Planning Operations](4-scoping.md){ .md-button } &nbsp; [6. Reporting & Influencing Change →](6-reporting.md){ .md-button }
+[←&nbsp;4. Scoping & Planning Operations](4-scoping.md){ .md-button } [6. Reporting & Influencing Change&nbsp;→](6-reporting.md){ .md-button }
+{ .rtsg-nav }

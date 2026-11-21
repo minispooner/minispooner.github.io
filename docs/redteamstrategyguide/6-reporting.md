@@ -22,4 +22,5 @@ At the conclusion of a project, it's common to walk away with greater domain and
 
 ---
 
-[← 5. Operating Intentionally](5-operating.md){ .md-button } &nbsp; [7. Measuring Success →](7-measuring.md){ .md-button }
+[←&nbsp;5. Operating Intentionally](5-operating.md){ .md-button } [7. Measuring Success&nbsp;→](7-measuring.md){ .md-button }
+{ .rtsg-nav }

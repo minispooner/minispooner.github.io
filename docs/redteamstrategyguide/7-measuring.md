@@ -20,4 +20,5 @@ If nobody requests red-team services, investigate whether employees understand t
 
 ---
 
-[← 6. Reporting & Influencing Change](6-reporting.md){ .md-button } &nbsp; [8. Conclusion →](8-conclusion.md){ .md-button }
+[←&nbsp;6. Reporting & Influencing Change](6-reporting.md){ .md-button } [8. Conclusion&nbsp;→](8-conclusion.md){ .md-button }
+{ .rtsg-nav }
