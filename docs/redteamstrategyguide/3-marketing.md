@@ -1,218 +1,98 @@
 # 3. Marketing & Promoting Red Team Services
 
-_How to build awareness, trust, and demand for internal red teaming._
+_How to build awareness, demand, and trust for internal red teaming._
 
-<p class="rtsg-meta">📅 Published August 19, 2026 &nbsp;·&nbsp; 🕒 {{READTIME}} min read</p>
+<p class="rtsg-meta">📅 Published November 20, 2026 &nbsp;·&nbsp; 🕒 {{READTIME}} min read</p>
 
 <!-- prettier-ignore -->
 !!! tip "Takeaways"
     - Internal marketing helps teams understand what red teaming is, why it exists, and how it can help them.
+    - Educating others on the red team's purpose leads to higher-quality requests that better fit your work.
     - Greater awareness creates organic demand, giving red teams more opportunities from which to select high-impact work.
     - Trust and positive relationships improve collaboration during operations and receptivity to recommendations afterward.
     - Successful operations are some of the best marketing; make meaningful outcomes visible across the organization.
-    - A healthy inbound pipeline should be tracked and intentionally prioritized rather than handled ad hoc.
 
 ---
 
 ## Why Market an Internal Red Team?
 
-At first glance, marketing an internal red team may sound unnecessary. The team already exists, leadership already funds it, and red teamers are perfectly capable of identifying systems they want to test on their own. Plus, red teams are supposed to maintain an independent adversarial perspective, right? Shouldn't we decide for ourselves what to test? Yes, absolutely, but there are also good reasons to source work from others. Threat Intelligence teams can provide insight into relevant adversaries and emerging behaviors. Engineering teams can tell you where their most valuable data lives, painting the bullseye before you even draw your bow. Security architecture teams can point you toward platforms ripe for change and help drive recommendations afterward.
+At first glance, marketing an internal red team may sound unnecessary. Shouldn't we just focus on running operations? Operations are the core of our work, but as we covered in [2. The Purpose of Internal Red Teams](2-purpose.md), our ultimate goal is to influence security improvements. That becomes much harder if teams don't understand what we do, how we can help them, or why they should trust us.
 
-All these examples show how information and collaboration from other teams can positively influence and support your own red team work. But effective collaboration starts with understanding what each team does and how they can help one another. That's the first reason to market red teaming: awareness creates opportunities for collaboration. As we create awareness around what we offer, engineers, security teams, and leaders come to understand the value we provide and are then more likely to recognize situations where adversarial testing could help them. As awareness and understanding increase, they begin to translate into demand for red teaming services. That demand creates a backlog of potential operations from which the red team can select. A team with a healthy backlog can compare opportunities and prioritize the work most likely to produce meaningful measurements and improvements. But the goal is not simply to build the largest backlog possible. The goal is to create enough demand that the team can be selective.
+Marketing helps us achieve this goal in three ways: it builds awareness, creates demand, and establishes trust.
 
-But marketing isn't just about teaching others what red teaming is. It's also about building and fostering trusting relationships that pave the way to effective collaboration. How others perceive the red team heavily influences their willingness to collaborate. Adversarial testing can make people uncomfortable. Red teams intentionally find weaknesses in systems other teams built, operate, or defend. If the first interaction someone has with the red team occurs when an operation exposes a significant problem, it is easy for the team to be perceived as an auditor, an enforcement function, or the "security police." That perception can make people guarded, defensive, and less willing to collaborate.
+### Awareness
 
-Building relationships before an operation begins changes that dynamic. When people understand that the red team's purpose is to measure security effectiveness and help influence improvements &mdash; not embarrass teams or point fingers &mdash; red teaming becomes easier to accept and seek out. Then, as operations are scoped and conducted, and findings are delivered, teams are more likely to have candid conversations about what threats are most important and view findings as useful information rather than criticism.
+Red teams that operate without organizational input risk exposing weaknesses without understanding the company's priorities or ability to address them. Their measurements may be accurate, but if they don't account for that context, they rarely lead to improvements. On the flip side, red teams that only test what the organization asks for risk inheriting its biases and blind spots.
 
-As discussed earlier in this guide, the red team's ultimate goal is to influence improvements, and that's really hard to do if people don't understand or like you. Overall, marketing and promoting red team services builds awareness, demand, and trust, giving the red team better opportunities to test and a better chance of turning those measurements into meaningful change.
+Building awareness opens the door to conversations that help us find that sweet spot between the two. As we spread awareness about the red team's mission, other teams learn what we offer and how we can help each other. We also learn about their concerns, capabilities, and priorities so that we can design testing that stretches the organization and leads to improvements.
 
-## Build Awareness Before You Need It
+A few examples of collaborating with other teams:
 
-This is your "get your face out there" section.
-The basic principle:
-People can't request a service they don't understand.
-Explain:
-what the red team does
-why the organization has one
-what kinds of problems it can help evaluate
-what makes red teaming different from pentesting/AppSec/etc.
-examples of when another team should contact you
-Your Section 2 distinction between red teaming and vulnerability-discovery functions gives you a perfect foundation for this.
+- Threat Intelligence teams can tell us which adversaries are relevant to the company and how they've been operating lately.
+- Engineering teams can tell us what they want to protect and where they want to validate their defenses.
+- Security Architecture teams can point us to potentially risky workflows in critical platforms and help champion resulting improvements.
 
-### Find Your Audience
+From our side, we can show defenders how an adversary would actually move through their environment, give engineers the backing to get security work prioritized, and give leaders evidence of where their security investments fall short against a motivated adversary.
 
-Possible channels:
+### Demand
 
-- Internal security conferences
-- Engineering conferences
-- Organization or company all-hands
-- Leadership forums
-- Security Slack/Teams channels
-- Internal security newsletters or quarterly updates
-- Engineering/security community meetings
-- Readouts from completed operations
+As engineers, security teams, and leaders understand the value we provide, they're more likely to recognize where adversarial testing could help them. This creates organic demand, giving us more opportunities to choose from. We're not trying to build the biggest backlog we can &mdash; we just want enough requests to pick the highest-impact work.
 
-It's important to meet people where they are, rather than expecting them to discover a red team wiki page on their own.
+Marketing also affects the kinds of requests we get. Red teams can easily get pulled into vulnerability discovery or backfilling other teams' capacity. If people only know us as the team that finds vulnerabilities, they'll keep asking us to find vulnerabilities. When we present or write about our work, we should be clear about what the red team is actually for: measuring how well the company can prevent, detect, and respond to realistic adversary activity. When people understand that, they're more likely to ask us how their defenses would hold up against an attack, not just whether we can find vulnerabilities.
 
-### Make It Interesting
+### Trust
 
-This is where your presentation note belongs.
-Don't give a 40-slide explanation of ATT&CK.
-Show:
-a compelling attack story
-an unexpected attack path
-a surprising defensive gap
-a meaningful improvement produced afterward
-Your goal is curiosity:
-"Could something like that happen to us?"
-Then explain how the red team can help answer that question.
+Adversarial testing can make people uncomfortable. Red teams intentionally find weaknesses in systems other teams build, operate, or defend. If someone's first interaction with the red team is an operation that exposes a major problem they're responsible for, it's easy for them to see us as auditors or the "security police." People who see us that way tend to get defensive and are less willing to collaborate.
 
-## Publish Your Wins
+Building relationships before an operation starts helps establish trust before we need it. Teams should know the adversary role is temporary: we simulate an adversary during testing, but remain partners in improving security throughout. When teams know we're there to help them improve, not to embarrass them or point fingers, they're more likely to accept red teaming and even ask for it. They're also more likely to tell us what actually worries them and to take our recommendations seriously.
 
-This should probably be a substantial section.
-Your principle could be:
-Successful operations create demand for future operations—but only if people hear about them.
-Share appropriately sanitized examples of:
-previously unknown risks uncovered
-attack paths demonstrated
-defensive weaknesses exposed
-improvements triggered by testing
-systemic problems identified across multiple teams
-But keep it aligned with Section 1: don't market technical activity as impact.
-Instead of:
-"We compromised 300 hosts."
-prefer:
-"Testing exposed a systemic credential issue affecting multiple environments, leading to a company-wide control that prevented recurrence."
-That directly reinforces your earlier distinction between technical output and actual business impact.
+The red team's goal is to influence improvements, and that's hard to do if people don't understand or trust us. Marketing helps others understand what we do and want to work with us, which leads to better-informed operations, findings that get acted on, and improvements that last.
 
-### Make Outcomes Tangible
+The rest of this section covers how to do that: finding the right audiences, showing the value of our work, and turning interest into opportunities.
 
-Your before/after idea fits really well:
-Before
-adversary technique went undetected
-privileged credentials were broadly exposed
-incident escalation took hours
-After
-telemetry added
-credentials eliminated/rotated
-control deployed broadly
-response process improved
-I'd be somewhat careful with "dollars avoided." Use it when you actually have defensible numbers, but don't encourage security teams to fabricate hypothetical breach-cost figures just because executives like dollar signs.
+## Find Your Audience
 
-## Let Your Customers Promote You
+Internal red teams are uncommon &mdash; most people won't know what we do unless we tell them. Use the channels the organization already has, such as internal conferences, engineering all-hands, security forums, leadership meetings, newsletters, Slack or Teams channels, and operation readouts, to explain what the red team does and where it has helped.
 
-I really like this idea and would give it its own short section.
-Your strongest advocates aren't red teamers saying:
-"Red teaming is awesome."
-They're engineers or security leaders saying:
-"We worked with the Red Team, learned something important, and it helped us improve."
-Discuss:
-satisfied partners sharing experiences at all-hands
-joint operation readouts
-partner quotes in internal newsletters
-leaders recommending red-team engagement to peer organizations
-I would emphasize organic advocacy rather than soliciting testimonials.
-Something like:
-Good work creates advocates. Give those advocates opportunities to tell the story.
+Different audiences care about different things. Engineers may want to understand how an adversary would steal their crown jewels. Security teams may want to know where their defenses are weakest. Leaders may care more about systemic risk, organizational resilience, and whether security investments are working as intended. The focus of the message can change based on the audience, but our purpose should be clear and consistent.
 
-## Turn Awareness Into Collaboration
+Be specific about when someone should reach out. Useful starting points include:
 
-This is where I'd put several of your remaining ideas.
-Marketing shouldn't merely cause teams to throw scopes over the wall.
-The best outcome is often:
-"We have something important we'd like to test. Can we work together?"
-Examples:
-Engineers acting as trusted insiders during assumed-compromise exercises
-Blue teams collaborating on purple-team activities
-Product teams providing architecture/context that enables deeper testing
-Defenders sharing goals when collaborative testing is appropriate
-Interested employees observing portions of an operation or helping with appropriately bounded activities
-The important argument isn't necessarily that collaboration makes attacks technically easier.
-It's that relationships create better conditions for organizational learning and improvement.
-You can connect this directly to the Section 2 line:
-"During testing, the red team is an adversary. After testing, it's a partner."
-You could even echo that here.
+- Major platform changes that alter how the organization prevents, detects, or responds to attacks
+- Uncertainty about whether defenses would stop a relevant adversary
+- Concerns about a sensitive attack path
 
-## Manage Inbound Demand
+Explain what a team can expect from an operation and how it differs from requesting a penetration test. They don't need to arrive with a fully scoped request.
 
-Once marketing works, you have another problem:
-people start asking for things.
-That's a good problem—as long as you manage it deliberately.
-Create a Single Intake Queue
-Track requests somewhere structured, e.g. Jira:
-requesting organization
-proposed target
-desired outcome
-business/security rationale
-timing constraints
-stakeholders
-initial red-team assessment
-priority/status
-The point isn't Jira specifically.
-The point is creating visibility into demand so the team can triage instead of reacting to whoever asks loudest.
+Some of the best opportunities come from small interactions. An engineer who attends a red team presentation may later volunteer architecture context for an operation. A defender may propose a purple team exercise to test logging coverage they're unsure of.
 
-### Decide What Should Be Visible
+## Show the Value
 
-I like your public/private distinction, but I'd make it a short note:
-Some requests can exist in a broadly visible backlog when knowledge of the eventual assessment doesn't materially affect the measurement.
-Others should remain restricted when advance awareness could cause defenders or system owners to prepare and invalidate the measurement.
-That's a nice strategic nuance.
+Successful operations are some of our best marketing, but only if people hear about them. Tell short, compelling stories about unexpected attack paths, what they revealed about the organization's defenses, and what improved afterward. The story should lead people to consider whether something similar could happen in their area. Then explain how the red team can help them find out.
 
-### Prioritize, Don't Just Schedule
+As discussed in [1. Introduction](1-introduction.md), technical results aren't the same as business impact. "We compromised 300 hosts" may get attention, but it doesn't explain why anyone should care. A more useful story might be: "Testing exposed a systemic credential issue affecting multiple environments. The responsible teams used those findings to deploy a control that closed that attack path across the company."
 
-This is the bridge into Section 4.
-A long queue isn't a mandate to execute everything.
-It gives the red team options.
-Then you can evaluate requests based on things like:
-alignment with red-team purpose
-potential organizational impact
-realistic adversary relevance
-strategic importance
-opportunity to measure important defenses
-uniqueness of what the red team can provide
-And then say something like:
-The goal isn't to work through the backlog. The goal is to use the backlog to identify the best work.
-That might actually be one of the central lines of the chapter.
+In each story, be specific about what changed. For example, an adversary technique that went undetected now produces an actionable alert, default credentials no longer ship in products, or new logging lets incident responders see lateral movement they previously missed. Distinguish improvements that have been implemented from those that are still recommendations. Don't claim a control works until it's been validated, and don't attach a hypothetical "dollars avoided" figure without defensible evidence.
 
-## Demand as a Signal
+Share these stories through presentations, internal writeups, and operation readouts, with enough context for other teams to recognize where the lessons apply. Agree with leadership or stakeholders on what can be shared and with whom. Sanitize sensitive details, give credit to the teams that made the improvements, and avoid turning a security gap into a public embarrassment.
 
-I'd finish the substantive content with your idea about demand indicating program health, but make it nuanced.
-You don't want:
-Requests = success.
-That conflicts somewhat with your disdain for vanity metrics.
-Instead:
-Demand is a useful signal, not a measure of impact.
-A mature red team may generate plenty of strategically important operations itself. So there isn't some ideal ratio of internally sourced vs externally requested operations.
-But if nobody ever requests red-team services, that's worth investigating.
-Possible reasons:
-employees don't understand what the team does
-they don't understand when to engage it
-the red team hasn't demonstrated useful outcomes
-previous engagements were difficult or unpleasant
-the team has a reputation for policing rather than helping
-the organization's structure simply doesn't encourage inbound engagement
-I'd preserve your slightly provocative wording here because it fits your writing voice:
-If nobody ever asks your red team for help, either they don't understand what you do, they don't see value in the results, or you're not very pleasant to work with.
-Maybe soften "probably" to "it may be worth asking whether..." in the actual chapter.
+We don't have to be the only ones telling the story, either. An engineer or security leader explaining how a red team operation helped their team improve can be more persuasive than the red team promoting itself. Joint readouts and partners sharing their experiences at all-hands give others a concrete example of what working with the red team looks like.
 
-## Before You Start Marketing
+<!-- prettier-ignore -->
+!!! quote "Story Time: Letting Leaders Tell Our Story"
+    At our company-wide 2026 Cybersecurity Awareness Month event, one of the themes was the evolving role of AI in both cyberattacks and defense. I gave the red team's perspective on how adversaries are using AI and where it's heading. I closed with a few asks: assume adversaries are already inside, and think like an adversary about which parts of your systems need the most protection.
 
-I wouldn't make ROE/leadership support a full opening section. It distracts from your argument.
-Make it a Note box somewhere early:
-Prerequisite: This chapter assumes the red team already has organizational authorization, established Rules of Engagement, and leadership support for conducting adversarial testing. Marketing services without clear authority and operational expectations creates problems that awareness alone can't solve.
-Short and done.
+    Before the event, the director speaking after me reached out to ask for red team metrics to include in their talk. On stage, they used those metrics to support their own message.
 
-## From Demand to Decisions
+    When leaders see red team data as useful, they ask for it and use it in their own messages, which often carries more weight than the red team could alone.
 
-Then a very short closing section that transitions into Section 4:
-Marketing has created:
-awareness
-trust
-relationships
-inbound demand
-a pipeline of potential operations
-But capacity is finite.
-Now the question becomes which opportunities deserve the red team's time.
+## From Awareness to Opportunities
+
+Make it easy to take the next step. Every presentation or writeup should point to a clear way to contact the team, whether that's a shared channel, an intake form, or a team email. Capture those conversations in a shared intake queue so useful opportunities aren't lost in individual inboxes, while restricting sensitive details that could tip off the teams being tested. Make it clear that submitting a request doesn't guarantee we'll take it on.
+
+The number of requests doesn't measure our impact. The red team should keep identifying its own work and form its own view of what matters most. We use requests to help find the best work, not as a list to complete.
+
+That's where marketing hands off to [4. Scoping & Planning Operations](4-scoping.md): deciding which opportunities are most likely to lead to improvements and turning them into operations with clear objectives.
 
 ---
 

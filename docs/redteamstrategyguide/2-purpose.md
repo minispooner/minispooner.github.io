@@ -100,7 +100,7 @@ From there, red teams combine operational evidence, security expertise, and that
 
 ## Purpose First
 
-Once purpose is defined, it should shape everything downstream &mdash; how you scope, operate, report, and measure success. Without it, you're back to the shotgun spray, hoping something lands.
+Once purpose is defined, it should shape everything downstream &mdash; how you communicate your value, select and scope work, operate, report, and measure success. Without it, you're back to the shotgun spray, hoping something lands.
 
 ---
 

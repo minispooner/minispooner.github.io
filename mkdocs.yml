@@ -30,6 +30,8 @@ theme:
     - content.tabs.link
   icon:
     logo: material/shield-lock
+    admonition:
+      quote: material/book-open-page-variant
   favicon: assets/favicon.svg
 
 hooks:
